@@ -604,7 +604,7 @@ https://git-scm.com/doc
 - **`git log --pretty=oneline`** - Faz com que caiba tudo em uma linha.
 - **`git log --graph`** - Desenha uma representação gráfica dos commits no lado esquerdo da saída. <br><br>
 
-- **`git diff`** - Mostra o que foi alterado em um arquivo, de vermelho o que foi excluído de verde o que foi adicionando.
+- **`git diff`** - Mostra o que foi alterado em um arquivo, de vermelho o que foi excluído, de verde o que foi adicionando.
 Use o "git diff" antes de dar o "git add". <br><br>
 
 - **`git show`** - Apresenta o último ponto na "história" do nosso projeto.
