@@ -717,6 +717,7 @@ Alias que eu gosto de usar:
 [alias]
   i = init
   a = add
+  b = branch
   ci = commit
   co = checkout
   cm = checkout master
