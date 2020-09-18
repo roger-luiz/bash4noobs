@@ -610,7 +610,8 @@ Use o "git diff" antes de dar o "git add". <br><br>
 - **`git show`** - Apresenta o último ponto na "história" do nosso projeto.
 - **`git show [hash]`** - Apresenta determinado ponto na "história" do nosso projeto. <br><br>
 
-- **`git branch`** - Lista, cria ou exclui ramificações. <br><br>
+- **`git branch`** - Lista, cria ou exclui ramificações.
+- **`git branch -d [ramificação]`** - Exclui ramificações. <br><br>
 
 - **`git checkout [hash]`** - Alterna ramificações ou restaura arquivos da árvore de trabalho.
 - **`git checkout [arquivo_modificado]`** - Descarta as mudanças feitas no arquivo. Use antes de dar o "git add".
