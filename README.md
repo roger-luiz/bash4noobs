@@ -576,7 +576,7 @@ https://git-scm.com/doc
 - [x] Você precisa voltar um arquivo para um determinado momento da linha do tempo.
 - [x] Você precisa recuperar algo deletado.
 
-## Cmandos
+## Comandos
 
 - **`git init`** - Cria um repositório Git vazio ou reinicialize um existente. <br><br>
 
