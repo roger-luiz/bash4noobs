@@ -1,13 +1,3 @@
-## O que é o Bash?
-
-Segundo o wikipedia, o que seria o bash:
-
-> "Acrônimo para "Bourne-Again SHell", o Bash é uma evolução retro-compatível muito mais interativa do Bourne Shell (sh). Os shells Bourne permitem a execução de sequências de comandos inseridos diretamente na linha de comandos ("prompt") ou ainda lidos de arquivos de texto conhecidos como shell scripts. Neles se podem invocar comandos internos aos próprios shells (conhecidos como comandos "builtins") ou ainda arquivos binários ou scripts de terceiros arquivados nos dispositivos de armazenamento do sistema."
-
-Para mais detalher clique [aqui](https://pt.wikipedia.org/wiki/Bash).
-
-Simplificando, Bash é uma linha de comando, e uma linha de comando é uma forma diferente de se usar um sistema operacional, uma forma sem interface gráfica.
-
 ## Atalhos globais do Bash
 
 - **`Ctrl + Shift + C`** - Copiar.
