@@ -548,6 +548,8 @@ Marcação de sintaxe
 - **`:syntax off`** - Desliga a marcação de sintaxe.
 - **`:set syntax=perl`** - Força a usar a marcação de sintaxe do perl.
 
+--
+
 ## Git
 
 ### Instalação
@@ -689,6 +691,31 @@ Deve ser um dos seguintes:
 * **style**: Alterações que não afetam o significado do código (espaço em branco, formatação, ponto e vírgula, etc).
 * **test**: Adicionando testes ausentes ou corrigindo testes existentes.
 * **revert**: Reverter para um commit anterior.
+
+| Commit type            | Emoji                                           |
+| :--------------------- | :---------------------------------------------- |
+| Initial commit         | :tada: `:tada:`                                 |
+| Version tag            | :bookmark: `:bookmark:`                         |
+| New feature            | :sparkles: `:sparkles:`                         |
+| Bugfix                 | :bug: `:bug:`                                   |
+| Docker                 | :whale: `:whale:`                               |
+| Fix names              | :pencil: `:pencil:`                             |
+| Fix for iOS            | :apple: `:apple:`                               |
+| Fix for Android        | :robot: `:robot:`                               |
+| Security Fix           | :lock: `:lock:`                                 |
+| Metadata               | :card_index: `:card_index:`                     |
+| Refactoring            | :recycle: `:recycle:`                           |
+| Documentation          | :books: `:books:`                               |
+| Internationalization   | :globe_with_meridians: `:globe_with_meridians:` |
+| Accessibility          | :wheelchair: `:wheelchair:`                     |
+| Performance            | :racehorse: `:racehorse:`                       |
+| Cosmetic               | :art: `:art:`                                   |
+| Tooling                | :wrench: `:wrench:`                             |
+| Tests                  | :rotating_light: `:rotating_light:`             |
+| Deprecation            | :poop: `:poop:`                                 |
+| Removal                | :wastebasket: `:wastebasket:`                   |
+| Work In Progress (WIP) | :construction: `:construction:`                 |
+| Additional comments    | :speech_balloon: `:speech_balloon:`             |
 
 ## Por quê?
 
