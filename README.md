@@ -548,35 +548,9 @@ Marcação de sintaxe
 - **`:syntax off`** - Desliga a marcação de sintaxe.
 - **`:set syntax=perl`** - Força a usar a marcação de sintaxe do perl.
 
---
+---
 
 ## Git
-
-### Instalação
-
-https://git-scm.com/download
-
-### Documentação
-
-https://git-scm.com/doc
-
-## CENAS
-
-- [x] Você deseja criar pontos na história da produção do seu projeto
-- [x] Você deseja verificar mudanças feitas no seu projeto
-
-- [x] Você começa uma nova funcionalidade no seu projeto, sem estragar o que já foi feito.
-- [x] Você adiciona as novas funcionalidades ao seu projeto em produção
-- [x] Você quer deletar a branch da nova funcionalidade, depois de aplicar em seu projeto.
-
-- [x] Você quer colocar seu projeto na nuvem.
-
-- [x] Você vai pegar um projeto já iniciado, para trabalhar com o time
-- [x] Você precisa resolver um conflito.
-- [x] Antes de enviar a resolução, precisamos atualizar o projeto local.
-
-- [x] Você precisa voltar um arquivo para um determinado momento da linha do tempo.
-- [x] Você precisa recuperar algo deletado.
 
 ## Comandos
 
@@ -596,8 +570,7 @@ https://git-scm.com/doc
 - **`git log --pretty=oneline`** - Faz com que caiba tudo em uma linha.
 - **`git log --graph`** - Desenha uma representação gráfica dos commits no lado esquerdo da saída. <br><br>
 
-- **`git diff`** - Mostra o que foi alterado em um arquivo, de vermelho o que foi excluído, de verde o que foi adicionando.
-Use o "git diff" antes de dar o "git add". <br><br>
+- **`git diff`** - Mostra o que foi alterado em um arquivo, de vermelho o que foi excluído, de verde o que foi adicionando. Use o "git diff" antes de dar o "git add". <br><br>
 
 - **`git show`** - Apresenta o último ponto na "história" do nosso projeto.
 - **`git show [hash]`** - Apresenta determinado ponto na "história" do nosso projeto. <br><br>
@@ -624,26 +597,13 @@ Use o "git diff" antes de dar o "git add". <br><br>
 
 - **`git pull`** - Puxa do repositório remoto.
 
-Exemplo de um hash:
-  - a96c4c3
-  - a96c4c3936dbaa78be7254eb7b6b9b86fc46adc0
-
-O que é uma ramificação?
-
-> As ramificações do Git são um indicador efetivo de um instantâneo de suas mudanças. Quando você quiser adicionar um novo recurso ou corrigir um bug—não importa o tamanho, grande ou pequeno—basta criar uma nova ramificação para encapsular as mudanças. Isso faz com que seja mais difícil um código instável ser mesclado com a base de código principal e dá a chance de você limpar seu histórico futuro antes de fazer a mesclagem na ramificação principal.  
-
-## Padronização de commits
+ ## Padronização de commits
 
 Para poder padronizar seus commits, você vai precisar de duas ferramentas, o [commitlint](https://github.com/conventional-changelog/commitlint) e o [commitizen](https://github.com/commitizen/cz-cli), você pode instalar essas dependências usando o npm ou o yarn.
 
-Caso você não queira ler a documentação, recomendo dois vídeos sobre como usar as ferramentas para padronização:
+#### Formato da mensagem: Cada mensagem de commit consiste em um **cabeçalho**, um **corpo** e um **rodapé**.
 
-- Rocketseat - [Padronizando mensagens de commit do Git | Code/Drops #12](https://www.youtube.com/watch?v=erInHkjxkL8).
-- Angelo Luz - [Git - Padronização de commits - gitmoji, commitlint e commitizen](https://www.youtube.com/watch?v=49a9M17ZikI&t=975s). <br><br>
-
-- [X] **Formato da mensagem**: Cada mensagem de commit consiste em um **cabeçalho**, um **corpo** e um **rodapé**. 
-
-- [X] **Cabeçalho**: Tem um formato pré-definido, que inclui um **tipo** e um **título**:
+#### Cabeçalho: Tem um formato pré-definido, que inclui um tipo e um título. O cabeçalho é obrigatório:
 
 ```
 <tipo>(<escopo opcional>): <título>
@@ -658,23 +618,9 @@ improve(app-toolbox): xxxxxxx
 docs: Instruções de iniciar projeto com docker
 ```
 
-- [X] O **cabeçalho** é obrigatório.
-
 Qualquer linha da mensagem do commit não pode ter mais de 100 caracteres! Assim fica mais fácil para ler no GitHub, Gitlab e outras ferramentas de git.
 
-- [X] **Título**: O título contém uma descrição sucinta da mudança:
-
-* use o imperativo, tempo presente: "mudança" não "mudou" nem "muda".
-* não capitalize a primeira letra.
-* sem ponto (.) no final.
-
-- [X] **Corpo**: Um corpo de mensagem de commit mais longo PODE ser fornecido após o título, fornecendo informações contextuais adicionais sobre as alterações no código. Configure a mensagem com um wrap de 80 caracteres. Use para explicar "o que" e "porque" foi realizado essa modificação, ao invez de "como". O corpo DEVE começar depois de uma linha em branco após a descrição.
-
-- [X] **Rodapé**: Um rodapé PODE ser fornecido depois de uma linha em branco após o corpo. Caso exista um ticket no jira, criar um referência assim: `issue TP-666` ou `closes issue TP-666`.
-
-- [X] **Reverter um commit**: Se o commit reverte um commit anterior, ele deve começar por `revert:`, seguido pelo cabeçalho do commit revertido. No corpo, ele deve dizer: `Isso reverte o commit <hash> .`, onde o hash é o SHA do commit sendo revertido.
-
-## Tipos
+#### Tipos
 
 Deve ser um dos seguintes:
 
@@ -691,6 +637,8 @@ Deve ser um dos seguintes:
 * **style**: Alterações que não afetam o significado do código (espaço em branco, formatação, ponto e vírgula, etc).
 * **test**: Adicionando testes ausentes ou corrigindo testes existentes.
 * **revert**: Reverter para um commit anterior.
+
+#### Emojis para o título do `commit`:
 
 | Commit type            | Emoji                                           |
 | :--------------------- | :---------------------------------------------- |
@@ -716,6 +664,22 @@ Deve ser um dos seguintes:
 | Removal                | :wastebasket: `:wastebasket:`                   |
 | Work In Progress (WIP) | :construction: `:construction:`                 |
 | Additional comments    | :speech_balloon: `:speech_balloon:`             |
+
+#### Título: O título contém uma descrição sucinta da mudança:
+
+* use o imperativo, tempo presente: "mudança" não "mudou" nem "muda".
+* não capitalize a primeira letra.
+* sem ponto (.) no final.
+
+- ❌ RUIM: `git commit -m "add user.js"`
+
+- ✅ BOM: `git commit -m "♻️ - Migration created to person"`
+
+#### Corpo: Um corpo de mensagem de commit mais longo PODE ser fornecido após o título, fornecendo informações contextuais adicionais sobre as alterações no código. Configure a mensagem com um wrap de 80 caracteres. Use para explicar "o que" e "porque" foi realizado essa modificação, ao invez de "como". O corpo DEVE começar depois de uma linha em branco após a descrição.
+
+####  Rodapé: Um rodapé PODE ser fornecido depois de uma linha em branco após o corpo. Caso exista um ticket no jira, criar um referência assim: `issue TP-666` ou `closes issue TP-666`.
+
+#### Reverter um commit: Se o commit reverte um commit anterior, ele deve começar por `revert:`, seguido pelo cabeçalho do commit revertido. No corpo, ele deve dizer: `Isso reverte o commit <hash> .`, onde o hash é o SHA do commit sendo revertido.
 
 ## Por quê?
 
