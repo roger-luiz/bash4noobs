@@ -98,12 +98,14 @@ O comando ls é usado para listar o conteúdo de um diretório.
 * `ls -A` - Semelhante ao -a, mas não mostra o diretório corrente ( . ) ou o diretório acima ( .. ).
 * `ls -i` - Mostra o número do inode de cada arquivo na primeira coluna.
 
+[Ver exemplo](examples/listagem-de-arquivos.md)
+
 ## Entrando e saíndo de diretórios
 
 O comando cd é usado para entrar em uma determinda pasta.
 
 * `cd [destino]`
-* `cd .` ou `.` - Diretório atual.
+* `cd .` - Diretório atual.
 * `cd ..` - Volta um diretório.
 * `cd /` - Vai direto para o diretório raiz.
 * `cd ~` - Vai direto para o diretório home.
@@ -111,9 +113,13 @@ O comando cd é usado para entrar em uma determinda pasta.
 * `cd /diretorio` - Partindo da raiz até o último diretório passado como referência.
 * `cd diretorio` - Parte do local corrente até o diretório passado como referência.
 
+[Ver exemplo](examples/entrando-e-saindo-de-diretorios.md)
+
 ## Exibindo o diretório atual
 
 * `pwd` - Exibe o caminho de diretório atual.
+
+[Ver exemplo](examples/exibindo-o-diretorio-atual.md)
 
 ## Criando diretórios
 
@@ -123,9 +129,13 @@ O comando mkdir é usado para criar pastas
 * `mkdir pasta1 pasta2 pasta3` - Cria três pastas, pasta1, pasta2 e pasta3.
 * `mkdir -p A/B/C` - Cria a pasta A, dentro da pasta A cria a pasta B e dentro da pasta B cria a pasta C.
 
+[Ver exemplo](examples/criando-diretorios.md)
+
 ## Exibindo o tamanho de um diretório
 
 * `du [diretório]` - Exibe o tamanho de um diretório e todos os seus subdiretórios.
+
+[Ver exemplo](examples/exibindo-o-tamanho-de-um-diretorio.md)
 
 ## Criando arquivos
 
@@ -138,7 +148,9 @@ O comando touch é usado para criar arquivos.
 * `touch -am [arquivo]` - Altera a hora de acesso e modificação do arquivo.
 * `touch -c [arquivo]` - Altera a hora de acesso sem criar um novo arquivo.
 
-**Observação**: podemos gerar nomes automáticos usando as chaves {} desta maneira: touch exemplo{1..3}.txt, este comando irá criar 3 arquivos chamados exemplo1.txt, exemplo2.txt e exemplo3.txt.
+**Observação**: podemos gerar nomes automáticos usando as chaves `{}`, desta maneira: `touch exemplo{1..3}.txt`, este comando irá criar 3 arquivos chamados exemplo1.txt, exemplo2.txt e exemplo3.txt.
+
+[Ver exemplo](examples/criando-arquivos.md)
 
 ## Excluíndo diretórios e arquivos
 
@@ -150,7 +162,6 @@ O comando rm é usado para excluir arquivos.
 * `rm -r` - Exclui o diretório e os arquivos na direção recursiva, o diretório especificado junto com seu subdiretório e arquivos.
 * `rm -d` - Remove somente diretórios vazios.
 * `rm -i` - Pergunta se queremos remover o arquivo/diretório antes de excluir.
-* `rm -rf` - (rm -r) + (rm -f) ( utilize esse comando com extrema atenção! ).
 
 ## Copiando diretórios e arquivos
 
