@@ -33,6 +33,10 @@
   * [Padronização de commits ( Opcional )](#padronização-de-commits--opcional-)
   * [Alias ( Opcional )](#alias--opcional-)
 
+## Algumas observações
+
+No **Linux** tudo é **arquivo**, um usuário do terminal é represtentado como um arquivo, assim como os própios comandos, os hardwares conectados na máquina, diretórios (diretório = pasta) e etc.
+
 # Bash
 
 ## Atalhos globais do Bash
