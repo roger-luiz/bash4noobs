@@ -81,7 +81,7 @@ Você pode consultar a documentação e o manual de uso dos comandos das seguint
 
 ## Listagem de arquivos
 
-O comando ls é usado para listar o conteúdo de um diretório.
+Podemos listar o conteúdo de um diretório utilizando o comando ls.
 
 * `ls [opções]`
 * `ls` - Lista arquivos e diretórios.
@@ -102,7 +102,7 @@ O comando ls é usado para listar o conteúdo de um diretório.
 
 ## Entrando e saíndo de diretórios
 
-O comando cd é usado para entrar em uma determinda pasta.
+Podemos entrar e sair de um diretório utilizando o comando cd.
 
 * `cd [destino]`
 * `cd .` - Diretório atual.
@@ -123,9 +123,9 @@ O comando cd é usado para entrar em uma determinda pasta.
 
 ## Criando diretórios
 
-O comando mkdir é usado para criar pastas
+Podemos criar pastas utilizando o comando mkdir.
 
-* `mkdir [nome_da_pasta]` - Cria uma pasta.
+* `mkdir [nome-da-pasta]` - Cria uma pasta.
 * `mkdir pasta1 pasta2 pasta3` - Cria três pastas, pasta1, pasta2 e pasta3.
 * `mkdir -p A/B/C` - Cria a pasta A, dentro da pasta A cria a pasta B e dentro da pasta B cria a pasta C.
 
@@ -139,7 +139,7 @@ O comando mkdir é usado para criar pastas
 
 ## Criando arquivos
 
-O comando touch é usado para criar arquivos.
+Podemos criar arquivos utilizando o comando touch.
 
 * `touch [opções] [arquivo]`
 * `touch [arquivo]` - Cria uma arquivo.
@@ -154,7 +154,7 @@ O comando touch é usado para criar arquivos.
 
 ## Excluíndo diretórios e arquivos
 
-O comando rm é usado para excluir arquivos.
+Podemos excluir arquivos utilizando o comando rm.
 
 * `rm [opções] [arquivo]`
 * `rm` - Exclui um arquivo.
@@ -611,16 +611,20 @@ Marcação de sintaxe
 * `git add [file]` - Adiciona ou atualiza mudanças para irem para o repositório.
   * `git add .` - Você pode adicionar todos os arquivo usando o " . ".
 
+* `git rm [file]` - Remove os arquivos que foram adcionados com o `git add`.
+
 * `git commit -m "message"` - Registra alterações no repositório.
   * `git commit -am "message"` - Atualiza o repositório e registra alterações no repositório ao mesmo tempo.
+  * `git commit --amend -m "message"` - **Troca** a última mensagem feita no commit.
 
 * `git log` - Mostra os pontos na "linha do tempo" do repositório ( commit ).
   * `git log --oneline` - Mostra os pontos na "linha do tempo" de forma mais resumida.
   * `git log --abbrev-commit` - Ao vez de mostrar o hash com 40 caracteres, mostra apenas com 7 caracteres.
   * `git log --pretty=oneline` - Faz com que caiba tudo em uma linha.
   * `git log --graph` - Desenha uma representação gráfica dos commits no lado esquerdo da saída.
+  * `git log --grep="texto"` - Busca por commits que tenha a a palavra "texto".
 
-* `git diff` - Mostra o que foi alterado em um arquivo, de vermelho o que foi excluído, de verde o que foi adicionando. Use o "git diff" antes de dar o "git add".
+* `git diff` - Mostra o que foi alterado em um arquivo, de vermelho o que foi excluído, de verde o que foi adicionando. Use o `git diff` antes de dar o `git add`.
 
 * `git show` - Apresenta o último ponto na "história" do nosso projeto.
   * `git show [hash]` - Apresenta determinado ponto na "história" do nosso projeto.
@@ -629,15 +633,18 @@ Marcação de sintaxe
   * `git branch -d [ramificação]` - Exclui ramificações.
 
 * `git checkout [hash]` - Alterna ramificações ou restaura arquivos da árvore de trabalho.
-  * `git checkout [arquivo_modificado]` - Descarta as mudanças feitas no arquivo. Use antes de dar o "git add".
+  * `git checkout -- [arquivo-modificado]` - Descarta as mudanças feitas no arquivo. Use antes de dar o `git add`.
   * `git checkout -b [minha-feature]` - Cria uma nova ramificação no nosso projeto.
   * `git checkout master` - Vai para a ramificação master.
   * `git checkout [minha_ramificação]` - Vai para a ramificação criada pelo desenvolvedor.
-
-* `git reset HEAD` - Remove um arquivo adicionado pelo "git add". Usar depois do "git add" e antes do "git commit".
-  * `git reset --hard [hash]` - Remove um commit.
+  * `git checkout [hash] -- [file]` - Reverte um commit.
 
 * `git merge [minha_ramificação]` - Faz a fusão de uma ramificação x com a ramificação master. Para fazer a fusão você tem que estar na ramificação master.
+
+* `git mv [file] [diretório]` - Move um arquivo para um diretório especificado
+* `git mv [nome_original] [novo_nome]` - Renomea um arquivo.
+
+* `git clean -f` - Remove arquivos não rastreados.
 
 * `git remote` - Verifica se existe um repositório remoto.
 
