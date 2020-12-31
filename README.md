@@ -341,7 +341,7 @@ Referências globais são recursos para especificar um ou mais arquivos ou diret
 
 ## Usuários
 
-## Trocando senha de usuários
+### Trocando senha de usuários
 
 O passwd é um comando utilizado para configurar ou trocar a senha das contas dos usuários do sistema. É necessário possuir privilégios administrativos para executá-lo, mas um usuário comum consegue alterar sua própria senha.
 
@@ -359,17 +359,17 @@ O passwd é um comando utilizado para configurar ou trocar a senha das contas do
 
 ## Tipos de usuários
 
-## Usuários comuns
+### Usuários comuns
 
 São os usuários que podem se conectar no sistema. Geralmente, estes usuários possuem uma home e podem manipular arquivos quando tem as permissões para tal. Porém estes usuários geralmente não tem permissão para certos arquivos e diretórios na maquina e não podem executar muitas funções a nível de sistema.
 
 Exemplo de um usuário comum: `roger@AB4NT5S:~$`
 
-## Usuários de sistema
+### Usuários de sistema
 
 Diferente dos usuários comuns, estes usuários não se conectam no sistema. São contas usadas para tarefas específicas dentro do sistema que não são de propriedade de uma pessoa em particular.
 
-## Root
+### Root
 
 O usuário root, também chamado de superusuário, tem controle total sobre o sistema operacional. Ele pode acessar todos os arquivos e normalmente é o único que pode executar certos programas, como por exemplo o httpd.
 
@@ -377,14 +377,14 @@ Exemplo de um usuário root: `root@AB4NT5S:~#`
 
 **Observação**: Não é recomendado que você use o terminal no modo root o tempo inteiro.
 
-## Grupos
+### Grupos
 
 Um grupo é um conjunto de um ou mais usuários. É interessante reunir vários usuários em um grupo para definir suas propriedades, como as permissões. Como o arquivo passwd nós temos um arquivo somente para armazenar detalhes sobre os grupos.
-Esse arquivo esta localizado em: /etc/group.
+Esse arquivo esta localizado em: `/etc/group`.
 
 ## Gerenciamento de usuários
 
-## Adicionar usuários
+### Adicionar usuários
 
 Criar um usuário novo no Linux é bem simples, apenas é necessário o comando useradd e indicar o nome do novo usuário.
 
@@ -393,7 +393,7 @@ Criar um usuário novo no Linux é bem simples, apenas é necessário o comando 
 * `useradd -s [nomeusuario]` - Define o shell padrão do usuário.
 * `useradd -h [nomeusuario]` - Exibe as opções do comando.
 
-## Alterar usuários
+### Alterar usuários
 
 Para alterarmos uma conta de usuário basta apenas utilizarmos o comando usermod.
 
@@ -406,7 +406,7 @@ Para alterarmos uma conta de usuário basta apenas utilizarmos o comando usermod
 * `usermod -s shell` - Altera o shell do usuário.
 * `usermod -u uid` - Altera o número de UID do usuário.
 
-## Remover usuários
+### Remover usuários
 
 Para removermos um usuário utilizamos o comando userdel.
 
