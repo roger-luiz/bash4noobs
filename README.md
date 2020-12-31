@@ -110,8 +110,8 @@ Podemos entrar e sair de um diretório utilizando o comando cd.
 * `cd /` - Vai direto para o diretório raiz.
 * `cd ~` - Vai direto para o diretório home.
 * `cd -` - Nos retorna para o último diretório acessado.
-* `cd /diretorio` - Partindo da raiz até o último diretório passado como referência.
-* `cd diretorio` - Parte do local corrente até o diretório passado como referência.
+* `cd /[destino]` - Partindo da raiz até o último diretório passado como referência.
+* `cd [destino]` - Parte do local corrente até o diretório passado como referência.
 
 [Ver exemplo](examples/entrando-e-saindo-de-diretorios.md)
 
@@ -123,9 +123,9 @@ Podemos entrar e sair de um diretório utilizando o comando cd.
 
 ## Criando diretórios
 
-Podemos criar pastas utilizando o comando mkdir.
+Podemos criar diretórios utilizando o comando mkdir.
 
-* `mkdir [nome-da-pasta]` - Cria uma pasta.
+* `mkdir [nome-do-diretorio]` - Cria uma pasta.
 * `mkdir pasta1 pasta2 pasta3` - Cria três pastas, pasta1, pasta2 e pasta3.
 * `mkdir -p A/B/C` - Cria a pasta A, dentro da pasta A cria a pasta B e dentro da pasta B cria a pasta C.
 
@@ -163,20 +163,24 @@ Podemos excluir arquivos utilizando o comando rm.
 * `rm -d` - Remove somente diretórios vazios.
 * `rm -i` - Pergunta se queremos remover o arquivo/diretório antes de excluir.
 
+[Ver exemplo](examples/excluindo-diretorios-e-arquivos.md)
+
 ## Copiando diretórios e arquivos
 
-O comando cp é usado para copiar arquivos.
+Podemos copiar arquivos utilizando o comando cp.
 
 * `cp [opções] [arquivo] [destino]`
 * `cp -i [arquivo] [destino]` - Pergunta se desejamos sobrescrever um arquivo destino já existente.
 * `cp -n [arquivo] [destino]` - Não sobrescreve um arquivo já existente.
 * `cp -r [arquivo] [destino]` - Copia diretórios de forma recursiva.
 * `cp -p [arquivo] [destino]` - Preserva as permissões originais do arquivo (proprietário, grupo, etc.).
-* `cp -vr [origem] [destino]` - copiar diretorio recursivamente.
+* `cp -vr [arquivo] [destino]` - Copia diretorios recursivamente.
+
+[Ver exemplo](examples/copiando-diretorios-e-arquivos.md)
 
 ## Movendo e renomeando arquivos e pastas
 
-O comando mv é usado para mover arquivos.
+Podemos mover arquivos com o comando mv.
 
 * `mv [opções] [arquivo] [destino]`
 * `mv -b [arquivo] [destino]` - Cria um backup de cada arquivo destino existente.
@@ -187,6 +191,8 @@ O comando mv é usado para mover arquivos.
 O comando mv também é usado para renomear arquivos.
 
 * `mv [nome_atual.extenção] [novo_nome.extenção]`
+
+[Ver exemplo](examples/movendo-e-renomeando-arquivos-e-pastas.md)
 
 ## Visualização de arquivos
 
@@ -206,19 +212,25 @@ O comando mv também é usado para renomear arquivos.
 * `cat [arquivo] > [arquivo]` - Copia o conteúdo do arquivo para outro.
 * `cat [arquivo] >> [arquivo]` - Adiciona o conteúdo do arquivo para outro.
 
+[Ver exemplo](examples/visualizacao-de-arquivos.md)
+
 ## Buscando por arquivos
 
-O comando find é usado para busca de arquivos.
+Podemos buscar por arquivos específicos em todo nosso sistema com o comando find.
 
 * `find .` - Lista todos os arquivos contidos em um diretório e subdiretórios.
 * `find . -name [arquivo]` - Busca um arquivo com um nome especifico.
 * `find [diretório] -iname [arquivo]` - Procura ignorando case sensitive.
 
+[Ver exemplo](examples/buscando-por-arquivos.md)
+
 ## Calculadora
 
 * **`bc`** - Abre uma calculadora do Bash
 
-**Observação**: Para sair bastas digitar 'quit' e dar enter.
+**Observação**: Para sair bastas digitar 'quit' e dar enter ou 'Ctrl+d'.
+
+[Ver exemplo](examples/calculadora.md)
 
 ## Processos
 
@@ -237,6 +249,8 @@ O comando find é usado para busca de arquivos.
 * `ps -u` - Fornece o nome do usuário e a hora de início do processo.
 * `ps -aux` - exibe todos os processos do sistema independente de terminal.
 
+[Ver exemplo](examples/processos.md)
+
 ## Informações do sistema
 
 * `whereis [programa]` - Exibe possíveis localizações de um determinado programa.
@@ -254,10 +268,12 @@ O comando find é usado para busca de arquivos.
 * `uname -r ou uname --kernel-release` - Imprime a versão do kernel.
 * `uname -v ou uname --kernel-version` - Imprime a versão do kernel.
 * `uname -m ou uname --machine` - Imprime o nome do hardware da máquina.
-* `uname -p ou uname --processor` - Imprime o tipo de processador ou ” desconhecido “.
-* `uname -i ou uname --hardware-platform` - Imprime a plataforma de hardware, ou ” desconhecido “.
+* `uname -p ou uname --processor` - Imprime o tipo de processador ou " desconhecido ".
+* `uname -i ou uname --hardware-platform` - Imprime a plataforma de hardware, ou " desconhecido ".
 * `uname -o ou uname --operating-system` - Imprime o sistema operacional.
 * `uname --version` - Exibe informações da versão.
+
+[Ver exemplo](informacoes-do-sistema.md)
 
 ## Memória
 
@@ -270,6 +286,8 @@ O comando find é usado para busca de arquivos.
 * `df -l` - Somente lista sistema de arquivos locais.
 * `df -m` - Lista em Mbytes.
 * `df -T` - Lista o tipo de sistema de arquivos de cada partição.
+
+[Ver exemplo](memoria.md)
 
 ## Programas e atualizações
 
@@ -284,14 +302,19 @@ O comando find é usado para busca de arquivos.
 
 ## Compressão de arquivos
 
-* `tar cf pacote.tar arqs` - Cria um pacote TAR (nomeado pacote.tar) com os arquivos especificados (substituir a variável arqs pelo nome do arquivo).
-* `tar xf pacote.tar` - Extrai os arquivos de “pacote.tar” (substituir a variável pacote.tar pelo nome do arquivo).
-* `tar czf pacote.tar.gz arqs` - Cria um pacote TAR (nomeado pacote.tar.gz) com compressão GZip.
+* `tar cf pacote.tar [arquivos]` - Cria um pacote TAR (nomeado pacote.tar) com os arquivos especificados.
+* `tar xf pacote.tar` - Extrai os arquivos de "pacote.tar" (substituir a variável pacote.tar pelo nome do arquivo).
+
+* `tar czf pacote.tar.gz [arquivos]` - Cria um pacote TAR (nomeado pacote.tar.gz) com compressão GZip.
 * `tar xzf pacote.tar.gz` - Extrai um pacote TAR (nomeado pacote.tar.gz) com compressão GZip.
-* `tar cjf pacote.tar.bz2` - Cria um pacote TAR (nomeado pacote.tar.bz2) com compressão BZip2.
+
+* `tar cjf pacote.tar.bz2 [arquivos]` - Cria um pacote TAR (nomeado pacote.tar.bz2) com compressão BZip2.
 * `tar xjf pacote.tar.bz2` - Extrai um pacote TAR (nomeado pacote.tar.gz) com compressão BZip2.
+
 * `gzip arq` - Compacta um arquivo e o renomeia para arq.gz (substituir a variável arq pelo nome do arquivo).
 * `gzip -d arq.gz` - Descompacta arq.gz para um arquivo (substituir a variável arq.gz pelo nome do arquivo).
+
+[Ver exemplo](compressao-de-arquivos.md)
 
 ## Histórico de comandos
 
@@ -301,7 +324,7 @@ O comando find é usado para busca de arquivos.
 
 ## Referência global
 
-Referências globais são recursos para especificar um ou mais arquivos ou diretórios de uma vez. Vamos usar o comando 'ls' para os exemplos, mas pode ser usado qualquer outro comando.
+Referências globais são recursos para especificar um ou mais arquivos ou diretórios de uma vez. Vamos usar o comando 'ls' para os exemplos, mas pode ser usado **qualquer** outro comando.
 
 * `ls /etc/*.conf` - Lista todos os arquivos que tem a extenção '.conf'.
 * `ls /etc/*x*` - Lista todos os aquivos que em algum lugar do nome tem a lera 'x'.
