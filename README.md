@@ -273,7 +273,7 @@ Podemos buscar por arquivos específicos em todo nosso sistema com o comando fin
 * `uname -o ou uname --operating-system` - Imprime o sistema operacional.
 * `uname --version` - Exibe informações da versão.
 
-[Ver exemplo](informacoes-do-sistema.md)
+[Ver exemplo](examples/informacoes-do-sistema.md)
 
 ## Memória
 
@@ -287,7 +287,7 @@ Podemos buscar por arquivos específicos em todo nosso sistema com o comando fin
 * `df -m` - Lista em Mbytes.
 * `df -T` - Lista o tipo de sistema de arquivos de cada partição.
 
-[Ver exemplo](memoria.md)
+[Ver exemplo](examples/memoria.md)
 
 ## Programas e atualizações
 
@@ -314,7 +314,7 @@ Podemos buscar por arquivos específicos em todo nosso sistema com o comando fin
 * `gzip arq` - Compacta um arquivo e o renomeia para arq.gz (substituir a variável arq pelo nome do arquivo).
 * `gzip -d arq.gz` - Descompacta arq.gz para um arquivo (substituir a variável arq.gz pelo nome do arquivo).
 
-[Ver exemplo](compressao-de-arquivos.md)
+[Ver exemplo](examples/compressao-de-arquivos.md)
 
 ## Histórico de comandos
 
