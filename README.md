@@ -30,8 +30,8 @@
 
 * [Git](#git)
   * [Comandos](#comandos)
-  * [Padronização de commits ( Opcional )](#padronização-de-commits--opcional-)
   * [Alias ( Opcional )](#alias--opcional-)
+  * [Padronização de commits ( Opcional )](#padronização-de-commits--opcional-)
 
 ## Algumas observações
 
@@ -416,17 +416,17 @@ Para removermos um usuário utilizamos o comando userdel.
 
 ## Vim
 
-Eu escolhi o editor vim para este artigo, mas você pode usar vários editores além do vim como o nano e o vi por exemplo.
+Eu escolhi usar o editor vim, mas você pode usar vários editores além do vim como o nano por exemplo.
 
 O vim (VI Improvement) é uma melhoria do antigo editor de texto vi. Este por sua vez é uma melhoria do editor de texto orientado a linha chamado ed. Existe também uma versão do vim para ambiente X chamada gvim.
 
-O vim possui três formas de trabalho: modo de linha, modo de edição e modo de comandos. A mudança de um modo para outro modo é feita através do uso da tecla Esc.
+O vim possui três formas de trabalho: **modo de linha**, **modo de edição** e **modo de comandos**. A mudança de um modo para outro modo é feita através do uso da tecla `Esc`.
 
 Após o arquivo ser aberto pelo vim, o modo de comandos é ativado. No modo de comandos, as teclas digitadas pelo usuário são interpretadas pelo vim como ações a serem executadas dentro do arquivo aberto. No modo de edição, as teclas digitadas pelo usuário são ecoadas na tela. Para entrar neste modo, pode-se digitar, por exemplo, "a" (adicionar), "i" (incluir), etc. No modo de linha, o usuário define ações a serem executadas no arquivo como um todo (por exemplo, salvar, substituir caracteres, sair do aplicativo, etc). Para entrar neste modo, deve-se digitar " : ".
 
 * `vim [opções] [arquivo]`
 
-São alguns dos comandos do vim no modo de comandos
+São alguns dos comandos do vim no **modo de comandos**:
 
 * `0` - Mover o cursor para o início da linha em que o cursor está posicionado.
 * `a` - Inserir texto após a posição atual do cursor.
@@ -472,15 +472,15 @@ São alguns dos comandos do vim no modo de comandos
 * `[n]+~+ENTER` - Inverter a caixa (case) dos n caracteres seguintes ao cursor.
 * `/texto` - Procurar pela primeira ocorrência do texto especificado a partir da posição atual do cursor.
 
-São alguns dos comandos do vim no modo de linha
+São alguns dos comandos do vim no **modo de linha**:
 
 * `:r arquivo` - Incluir arquivo a partir da linha atual do cursor.
 * `:q+ENTER` - Sair da tela de ajuda.
 * `:q!` - Sair do vim sem salvar as alterações.
 * `:w arquivo` - Salvar arquivo com o nome especificado.
-* `:wq` - Sair do vim salvando as alterações.
+* `:wq!` - Sair do vim salvando as alterações.
 * `:X` - Criptografa o arquivo.
-* `:n` - Ir para a linha "n". Exemplo: Para ir para linha 10 do arquivo, :1
+* `:n` - Ir para a linha "n". Exemplo: Para ir para linha 10 do arquivo, :10
 
 Busca
 
@@ -677,6 +677,35 @@ Marcação de sintaxe
 
 * `git pull` - Puxa do repositório remoto.
 
+## Alias ( Opcional )
+
+Você pode criar alias para os comandos do git, basta ir no arquivo ".gitconfig" e definir seus alias.
+No uninx ( Linux e Mac ) o arquivo ".gitconfig" fica localizado em: /home/seuusuário/.gitconfig
+
+Alias que eu gosto de usar:
+
+```
+[alias]
+  cl = clone
+  it = init
+  ad = add
+  bn = branch
+  ci = commit -m
+  co = checkout
+  cm = checkout master
+  cb = checkout -b
+  st = status -sb
+  sf = show --name-only
+  pom = push origin master -u
+  ps = push
+  lg = log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %s' --max-count=30
+  incoming = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' ..@{u})
+  outgoing = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' @{u}..)
+  unstage = reset HEAD --
+  undo = checkout --
+  rollback = reset --soft HEAD~1
+```
+
 ## Padronização de commits ( Opcional )
 
 Para poder padronizar seus commits, você vai precisar de duas ferramentas, o [commitlint](https://github.com/conventional-changelog/commitlint) e o [commitizen](https://github.com/commitizen/cz-cli), você pode instalar essas dependências usando o **npm** ou o **yarn**.
@@ -771,31 +800,3 @@ Qualquer linha da mensagem do commit não pode ter mais de 100 caracteres! Assim
 * Comunicar a natureza das mudanças para colegas de equipe, o público e outras partes interessadas de forma padronizada
 * Disparar processos de build e deploy;
 * Facilitar a contribuição de outras pessoas em seus projetos, permitindo que eles explorem um histórico de commits mais estruturado e com melhor rastreabilidade.
-
-## Alias ( Opcional )
-Você pode criar alias para os comandos do git, basta ir no arquivo ".gitconfig" e definir seus alias.
-No uninx ( Linux e Mac ) o arquivo ".gitconfig" fica localizado em: /home/seuusuário/.gitconfig
-
-Alias que eu gosto de usar:
-
-```
-[alias]
-  cl = clone
-  i = init
-  a = add
-  b = branch
-  ci = commit -m
-  co = checkout
-  cm = checkout master
-  cb = checkout -b
-  st = status -sb
-  sf = show --name-only
-  pom = push origin master -u
-  ps = push
-  lg = log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %s' --max-count=30
-  incoming = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' ..@{u})
-  outgoing = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' @{u}..)
-  unstage = reset HEAD --
-  undo = checkout --
-  rollback = reset --soft HEAD~1
-```
