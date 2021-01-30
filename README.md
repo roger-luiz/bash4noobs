@@ -669,6 +669,8 @@ Marcação de sintaxe
 
 * `git clean -f` - Remove arquivos não rastreados.
 
+* `git reset --hard [hash]` - Reverte um commit.
+
 * `git remote` - Verifica se existe um repositório remoto.
 
 * `git push` - Envia alterações locais para o repositório remoto.
