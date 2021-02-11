@@ -662,7 +662,7 @@ Marcação de sintaxe
   * `git checkout [minha_ramificação]` - Vai para a ramificação criada pelo desenvolvedor.
   * `git checkout [hash] -- [file]` - Reverte um commit.
 
-* `git merge [minha_ramificação]` - Faz a fusão de uma ramificação x com a ramificação master. Para fazer a fusão você tem que estar na ramificação master.
+* `git merge [branch]` - Faz a fusão de uma branch x com outra branch x. Para fazer a fusão das branchs você tem que estar na branch que vai recber a outra branch.
 
 * `git mv [file] [diretório]` - Move um arquivo para um diretório especificado
 * `git mv [nome_original] [novo_nome]` - Renomea um arquivo.
