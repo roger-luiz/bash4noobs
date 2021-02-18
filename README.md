@@ -276,7 +276,7 @@ fi
 No console:
 
 ```console
-#clone do repositório que você deseja ajustar os commits usando a flag --bare
+# clone do repositório que você deseja ajustar os commits usando a flag --bare
 git clone --bare [repo]
 
 # Navegue até o repositório pelo terminal
