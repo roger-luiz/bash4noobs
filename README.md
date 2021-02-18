@@ -39,6 +39,9 @@
 
 ## Configurando o git
 
+1. Instalção: https://git-scm.com/downloads
+2. Documentação: https://git-scm.com/doc
+
 Antes de começar a usar o git é importante que você tenha ele configurado corretamente em sua máquina.
 
 * `git config --global user.name "Fulano de Tal"` - Nome. Coloque o mesmo nome do **github**;
