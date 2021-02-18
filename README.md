@@ -1,11 +1,13 @@
 # Tutorial Git e Bash
 
-### Sumário
+## Sumário
 
 * [Git](#git)
+  * [Configurando o git](#configurando-o-git)
   * [Comandos](#comandos)
   * [Alias ( Opcional )](#alias--opcional-)
   * [Padronização de commits ( Opcional )](#padronização-de-commits--opcional-)
+  * [Ajustando o histórico de commits no github](#ajustando-o-histórico-de-commits-no-github)
 
 * Bash
   * [Atalhos globais do Bash](#atalhos-globais-do-bash)
@@ -35,14 +37,23 @@
 
 # Git
 
+## Configurando o git
+
+Antes de começar a usar o git é importante que você tenha ele configurado corretamente em sua máquina.
+
+* `git config --global user.name "Fulano de Tal"` - Nome. Coloque o mesmo nome do **github**;
+* `git config --global user.email fulanodetal@exemplo.br"` - Email. Coloque o mesmo email do **github**;
+* `git config --global core.editor vim` - Editor. Aqui você pode escolher o editor padrão do git;
+* `git config --list` - Use para ver o resultado das suas confirugarções.
+
 ## Comandos
 
-* `git init` - Cria um repositório Git vazio ou reinicialize um existente.
+* `git init` - Cria um repositório git vazio.
 
 * `git status` - Informa o estado das alterações do nosso projeto.
 
-* `git add [file]` - Adiciona ou atualiza mudanças para irem para o repositório.
-  * `git add .` - Você pode adicionar todos os arquivo usando o " . ".
+* `git add [file]` - Adiciona ou atualiza mudanças para irem para o nosso repositório.
+  * `git add .` - Você pode adicionar todos os arquivo usando o ".".
 
 * `git rm [file]` - Remove os arquivos que foram adcionados com o `git add`.
 
@@ -50,14 +61,14 @@
   * `git commit -am "message"` - Atualiza o repositório e registra alterações no repositório ao mesmo tempo.
   * `git commit --amend -m "message"` - **Troca** a última mensagem feita no commit.
 
-* `git log` - Mostra os pontos na "linha do tempo" do repositório ( commit ).
+* `git log` - Mostra os pontos na "linha do tempo" do repositório (commits).
   * `git log --oneline` - Mostra os pontos na "linha do tempo" de forma mais resumida.
-  * `git log --abbrev-commit` - Ao vez de mostrar o hash com 40 caracteres, mostra apenas com 7 caracteres.
-  * `git log --pretty=oneline` - Faz com que caiba tudo em uma linha.
-  * `git log --graph` - Desenha uma representação gráfica dos commits no lado esquerdo da saída.
+  * `git log --abbrev-commit` - Ao invés de mostrar o hash com 40 caracteres, mostra apenas com 7 caracteres.
+  * `git log --pretty=oneline` - Faz com que caiba toda a mesagem de commit em uma linha.
+  * `git log --graph` - Desenha uma representação gráfica dos commits no lado esquerdo da saída do terminal.
   * `git log --grep="texto"` - Busca por commits que tenha a a palavra "texto".
 
-* `git diff` - Mostra o que foi alterado em um arquivo, de vermelho o que foi excluído, de verde o que foi adicionando. Use o `git diff` antes de dar o `git add`.
+* `git diff` - Mostra o que foi alterado em um arquivo, de vermelho o que foi excluído, de verde o que foi adicionando. Use-o antes do `git add`.
 
 * `git show` - Apresenta o último ponto na "história" do nosso projeto.
   * `git show [hash]` - Apresenta determinado ponto na "história" do nosso projeto.
@@ -66,16 +77,15 @@
   * `git branch -d [ramificação]` - Exclui ramificações.
 
 * `git checkout [hash]` - Alterna ramificações ou restaura arquivos da árvore de trabalho.
-  * `git checkout -- [arquivo-modificado]` - Descarta as mudanças feitas no arquivo. Use antes de dar o `git add`.
   * `git checkout -b [minha-feature]` - Cria uma nova ramificação no nosso projeto.
+  * `git checkout [minha-ramificação]` - Vai para a ramificação criada pelo desenvolvedor.
   * `git checkout master` - Vai para a ramificação master.
-  * `git checkout [minha_ramificação]` - Vai para a ramificação criada pelo desenvolvedor.
-  * `git checkout [hash] -- [file]` - Reverte um commit.
+  * `git checkout -- [arquivo-modificado]` - Descarta as mudanças feitas no arquivo. Use antes de dar o `git add`.
 
-* `git merge [branch]` - Faz a fusão de uma branch x com outra branch x. Para fazer a fusão das branchs você tem que estar na branch que vai recber a outra branch.
+* `git merge [branch]` - Faz a fusão de uma branch X com uma branch Y. Para fazer a fusão das branchs você tem que estar na branch que vai recber a outra branch.
 
-* `git mv [file] [diretório]` - Move um arquivo para um diretório especificado
-* `git mv [nome_original] [novo_nome]` - Renomea um arquivo.
+* `git mv [arquivo] [diretório]` - Move um arquivo para um diretório especificado
+* `git mv [nome-original] [novo-nome]` - Renomea um arquivo.
 
 * `git clean -f` - Remove arquivos não rastreados.
 
@@ -85,14 +95,14 @@
 
 * `git push` - Envia alterações locais para o repositório remoto.
 
-* `git clone [link_repositório]` - Clonar um projeto / repositório.
+* `git clone [link-do-repositório]` - Clonar um projeto / repositório.
 
 * `git pull` - Puxa do repositório remoto.
 
 ## Alias ( Opcional )
 
 Você pode criar alias para os comandos do git, basta ir no arquivo ".gitconfig" e definir seus alias.
-No uninx ( Linux e Mac ) o arquivo ".gitconfig" fica localizado em: /home/seuusuário/.gitconfig
+No uninx (Linux e Mac) o arquivo ".gitconfig" fica localizado em: /home/seuusuário/.gitconfig
 
 Alias que eu gosto de usar:
 
@@ -205,13 +215,90 @@ Qualquer linha da mensagem do commit não pode ter mais de 100 caracteres! Assim
 
 `Reverter um commit`: Se o commit reverte um commit anterior, ele deve começar por `revert:`, seguido pelo cabeçalho do commit revertido. No corpo, ele deve dizer: `Isso reverte o commit <hash> .`, onde o hash é o SHA do commit sendo revertido.
 
-## Por quê?
+### Por quê?
 
 * Criação automatizada de CHANGELOGs;
 * Determinar automaticamente um aumento de versionamento semântico (com base nos tipos de commits);
 * Comunicar a natureza das mudanças para colegas de equipe, o público e outras partes interessadas de forma padronizada
 * Disparar processos de build e deploy;
 * Facilitar a contribuição de outras pessoas em seus projetos, permitindo que eles explorem um histórico de commits mais estruturado e com melhor rastreabilidade.
+
+## Ajustando o histórico de commits no github
+
+Pode acontecer de o seu nome ou email no git ser diferente do seu nome ou email do github. Isso pode afetar diretamente o seu número de commits no github (quadro branco com quadradinhos verdes). Mas para concertar é simples.
+
+Primeiro ajuste o nome e email que você deseja no git:
+
+`git config --global user.name "Nome Correto"`
+`git config --global user.email emailcorreto@exemplo.br"`
+
+Faça o clone do repositório que você deseja ajustar os commits usando a flag `--bare`:
+
+`git clone --bare [repo]`
+
+Crie um script sh (dê o nome fixing-commits.sh para ficar intuitivo) com o seguinte conteúdo:
+
+```sh
+#!/bin/sh
+
+git filter-branch --env-filter '
+
+OLD_NAME="Nome Antigo"
+CORRECT_NAME="Nome Novo"
+OLD_EMAIL="emailantigo@exemplo.br"
+CORRECT_EMAIL="emailcorreto@exemplo.br"
+
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
+then
+export GIT_COMMITTER_NAME="$CORRECT_NAME"
+export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
+then
+export GIT_AUTHOR_NAME="$CORRECT_NAME"
+export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
+
+if [ "$GIT_COMMITTER_NAME" = "$OLD_NAME" ]
+then
+export GIT_COMMITTER_NAME="$CORRECT_NAME"
+export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_NAME" = "$OLD_NAME" ]
+then
+export GIT_AUTHOR_NAME="$CORRECT_NAME"
+export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags
+```
+
+1. Mude o conteúdo da variável `OLD_NAME` para seu nome atual que será mudado.
+2. Mude o conteúdo da variável `CORRECT_NAME` para o novo nome que você deseja colocar.
+3. Mude o conteúdo da variável `OLD_EMAIL` para seu email atual que será mudado.
+4. Mude o conteúdo da variável `CORRECT_EMAIL` para o novo email que você deseja colocar.
+
+No console:
+
+```console
+# Navegue até o repositório pelo terminal
+cd [repo]
+
+# Rode o script sh
+fixing-commits.sh
+```
+
+É importante destacar que o script não precisa está na mesma pasta do projeto, mas no momento em que você roda o script você deve estar na pasta do projeto.
+
+E então faça o push:
+
+`git push --force --tags origin 'refs/heads/*'`
+
+Para finalizar é importante deletar o repositório local para não correr o risoc de você commitar no repositório em modo bare:
+
+```console
+cd ..
+rm -rf [repo]
+```
 
 # Bash
 
