@@ -213,11 +213,11 @@ Qualquer linha da mensagem do commit não pode ter mais de 100 caracteres! Assim
 * Disparar processos de build e deploy;
 * Facilitar a contribuição de outras pessoas em seus projetos, permitindo que eles explorem um histórico de commits mais estruturado e com melhor rastreabilidade.
 
+# Bash
+
 ## Algumas observações
 
 No **Linux** tudo é **arquivo**, um usuário do terminal é represtentado como um arquivo, assim como os própios comandos, os hardwares conectados na máquina, diretórios (diretório = pasta) e etc.
-
-# Bash
 
 ## Atalhos globais do Bash
 
