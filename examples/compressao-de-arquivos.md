@@ -3,22 +3,22 @@
 Compressão:
 
 ```console
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ ls
 keylogger.cpp  payload.py  script.js
-abantes@AB4NT5S:~/files$ tar cf container.tar script.js payload.py keylogger.cpp
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ tar cf container.tar script.js payload.py keylogger.cpp
+roger@roger:~/files$ ls
 container.tar  keylogger.cpp  payload.py  script.js
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$
 ```
 Extração:
 
 ```console
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ ls
 container.tar
-abantes@AB4NT5S:~/files$ tar xf container.tar
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ tar xf container.tar
+roger@roger:~/files$ ls
 container.tar  keylogger.cpp  payload.py  script.js
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$
 ```
 
 ## .tar.gz
@@ -26,23 +26,23 @@ abantes@AB4NT5S:~/files$
 Compressão:
 
 ```console
-abantes@AB4NT5S:~/files$ ls -F
+roger@roger:~/files$ ls -F
 images-jpg/  images-png/  images-svg/
-abantes@AB4NT5S:~/files$ tar czf images.tar.gz images-jpg/ images-png/ images-svg/
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ tar czf images.tar.gz images-jpg/ images-png/ images-svg/
+roger@roger:~/files$ ls
 images-jpg  images-png  images-svg  images.tar.gz
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$
 ```
 
 Extração:
 
 ```console
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ ls
 images.tar.gz
-abantes@AB4NT5S:~/files$ tar xzf images.tar.gz
-abantes@AB4NT5S:~/files$ ls -F
+roger@roger:~/files$ tar xzf images.tar.gz
+roger@roger:~/files$ ls -F
 images-jpg/  images-png/  images-svg/  images.tar.gz
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$
 ```
 
 ## .tar.bz2
@@ -50,25 +50,25 @@ abantes@AB4NT5S:~/files$
 Compressão
 
 ```console
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ ls
 flappy-bird
-abantes@AB4NT5S:~/files$ ls flappy-bird/
+roger@roger:~/files$ ls flappy-bird/
 LICENSE.md  README.md  package.json  public  src
-abantes@AB4NT5S:~/files$ tar cjf project.tar.bz2 flappy-bird/
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ tar cjf project.tar.bz2 flappy-bird/
+roger@roger:~/files$ ls
 flappy-bird  project.tar.bz2
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$
 ```
 
 Extração
 
 ```console
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ ls
 project.tar.bz2
-abantes@AB4NT5S:~/files$ tar xjf project.tar.bz2
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ tar xjf project.tar.bz2
+roger@roger:~/files$ ls
 flappy-bird  project.tar.bz2
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$
 ```
 
 ## .gz
@@ -76,21 +76,21 @@ abantes@AB4NT5S:~/files$
 Compressão
 
 ```console
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ ls
 exploit.py  trojan.cpp
-abantes@AB4NT5S:~/files$ gzip exploit.py trojan.cpp
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ gzip exploit.py trojan.cpp
+roger@roger:~/files$ ls
 exploit.py.gz  trojan.cpp.gz
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$
 ```
 
 Extração
 
 ```console
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ ls
 exploit.py.gz  trojan.cpp.gz
-abantes@AB4NT5S:~/files$ gzip -d exploit.py trojan.cpp
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ gzip -d exploit.py trojan.cpp
+roger@roger:~/files$ ls
 exploit.py  trojan.cpp
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$
 ```

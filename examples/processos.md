@@ -1,21 +1,21 @@
 ## ps
 
 ```console
-abantes@AB4NT5S:~$ ps
+roger@roger:~$ ps
   PID TTY          TIME CMD
     7 tty1     00:00:04 bash
   291 tty1     00:00:00 ps
-abantes@AB4NT5S:~$
+roger@roger:~$
 ```
 
 ```console
-abantes@AB4NT5S:~$ ps -A
+roger@roger:~$ ps -A
   PID TTY          TIME CMD
     1 ?        00:00:00 init
     6 tty1     00:00:00 init
     7 tty1     00:00:04 bash
   297 tty1     00:00:00 ps
-abantes@AB4NT5S:~$
+roger@roger:~$
 ```
 
 ## top

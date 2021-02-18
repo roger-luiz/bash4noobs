@@ -1,5 +1,5 @@
 ```console
-abantes@AB4NT5S:~$ du
+roger@roger:~$ du
 0       ./.cache/wslu
 0       ./.cache
 4       ./.config/htop
@@ -7,12 +7,12 @@ abantes@AB4NT5S:~$ du
 4       ./.config
 0       ./.ssh
 40      .
-abantes@AB4NT5S:~$
+roger@roger:~$
 ```
 
 ```console
-abantes@AB4NT5S:/$ cd /
-abantes@AB4NT5S:/$ du bin
+roger@roger:/$ cd /
+roger@roger:/$ du bin
 15228   bin
-abantes@AB4NT5S:/$
+roger@roger:/$
 ```

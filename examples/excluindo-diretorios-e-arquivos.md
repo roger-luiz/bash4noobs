@@ -1,25 +1,25 @@
 ```console
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ ls
 docs  keylogger.cpp  payload.py  script.js
-abantes@AB4NT5S:~/files$ rm keylogger.cpp
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ rm keylogger.cpp
+roger@roger:~/files$ ls
 docs  payload.py  script.js
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$
 ```
 
 ```console
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ ls
 docs  payload.py  script.js
-abantes@AB4NT5S:~/files$ rm -d docs/
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ rm -d docs/
+roger@roger:~/files$ ls
 payload.py  script.js
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$
 ```
 
 ```console
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ ls
 docs  image  keylloger.cpp  payload.py  script.js  web-docs
-abantes@AB4NT5S:~/files$ rm -rf *
-abantes@AB4NT5S:~/files$ ls
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$ rm -rf *
+roger@roger:~/files$ ls
+roger@roger:~/files$
 ```

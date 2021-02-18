@@ -1,19 +1,19 @@
 ```console
-abantes@AB4NT5S:~/files$ touch notas.txt
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ touch notas.txt
+roger@roger:~/files$ ls
 notas.txt
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$
 ```
 ```console
-abantes@AB4NT5S:~/files$ touch script.js payload.py keylogger.java
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ touch script.js payload.py keylogger.java
+roger@roger:~/files$ ls
 keylogger.java  payload.py  script.js
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$
 ```
 
 ```console
-abantes@AB4NT5S:~/files$ touch script{1..5}.js
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ touch script{1..5}.js
+roger@roger:~/files$ ls
 script1.js  script2.js  script3.js  script4.js  script5.js
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$
 ```

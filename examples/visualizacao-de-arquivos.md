@@ -1,5 +1,5 @@
 ```console
-abantes@AB4NT5S:~/files$ cat script.js
+roger@roger:~/files$ cat script.js
 const string = 'colorBackgroundPrimary'
 
 const transformKey = key => {
@@ -7,11 +7,11 @@ const transformKey = key => {
 }
 
 console.log( transformKey( string ) ) // --color-background-primary
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$
 ```
 
 ```console
-abantes@AB4NT5S:~/files$ cat Planejamento.md
+roger@roger:~/files$ cat Planejamento.md
 ### Conhecimentos Gerais
 
 - Estrutura de Dados e Algoritmos
@@ -43,5 +43,5 @@ abantes@AB4NT5S:~/files$ cat Planejamento.md
 - O que é Nome de Domínio?
 - O que é hospedagem?
 - SSH
-abantes@AB4NT5S:~/files$
+roger@roger:~/files$
 ```

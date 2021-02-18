@@ -1,29 +1,29 @@
 ```console
-abantes@AB4NT5S:~$ mkdir images
-abantes@AB4NT5S:~$ ls
+roger@roger:~$ mkdir images
+roger@roger:~$ ls
 images
-abantes@AB4NT5S:~$
+roger@roger:~$
 ```
 
 ```console
-abantes@AB4NT5S:~$ mkdir images videos songs
-abantes@AB4NT5S:~$ ls
+roger@roger:~$ mkdir images videos songs
+roger@roger:~$ ls
 images  songs  videos
-abantes@AB4NT5S:~$
+roger@roger:~$
 ```
 
 ```console
-abantes@AB4NT5S:~$ mkdir -p backup/images/png
-abantes@AB4NT5S:~$ ls
+roger@roger:~$ mkdir -p backup/images/png
+roger@roger:~$ ls
 backup
-abantes@AB4NT5S:~$ cd backup/
-abantes@AB4NT5S:~/backup$ ls
+roger@roger:~$ cd backup/
+roger@roger:~/backup$ ls
 images
-abantes@AB4NT5S:~/backup$ cd images/
-abantes@AB4NT5S:~/backup/images$ ls
+roger@roger:~/backup$ cd images/
+roger@roger:~/backup/images$ ls
 png
-abantes@AB4NT5S:~/backup/images$ cd png/
-abantes@AB4NT5S:~/backup/images/png$ pwd
+roger@roger:~/backup/images$ cd png/
+roger@roger:~/backup/images/png$ pwd
 /home/abantes/backup/images/png
-abantes@AB4NT5S:~/backup/images/png$
+roger@roger:~/backup/images/png$
 ```

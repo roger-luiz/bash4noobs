@@ -1,19 +1,19 @@
 ```console
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ ls
 git.md  sass.md  web-docs
-abantes@AB4NT5S:~/files$ cp git.md sass.md web-docs/
-abantes@AB4NT5S:~/files$ cd web-docs/
-abantes@AB4NT5S:~/files/web-docs$ ls
+roger@roger:~/files$ cp git.md sass.md web-docs/
+roger@roger:~/files$ cd web-docs/
+roger@roger:~/files/web-docs$ ls
 git.md  sass.md
-abantes@AB4NT5S:~/files/web-docs$
+roger@roger:~/files/web-docs$
 ```
 
 ```console
-abantes@AB4NT5S:~/files$ ls
+roger@roger:~/files$ ls
 dev-docs  docs
-abantes@AB4NT5S:~/files$ cp -r dev-docs/ docs/
-abantes@AB4NT5S:~/files$ cd docs/
-abantes@AB4NT5S:~/files/docs$ ls
+roger@roger:~/files$ cp -r dev-docs/ docs/
+roger@roger:~/files$ cd docs/
+roger@roger:~/files/docs$ ls
 dev-docs
-abantes@AB4NT5S:~/files/docs$
+roger@roger:~/files/docs$
 ```

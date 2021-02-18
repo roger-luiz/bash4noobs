@@ -1,23 +1,23 @@
 ```console
-abantes@AB4NT5S:~$ pwd
+roger@roger:~$ pwd
 /home/abantes
-abantes@AB4NT5S:~$
+roger@roger:~$
 ```
 
 ```console
-abantes@AB4NT5S:/$ pwd
+roger@roger:/$ pwd
 /
-abantes@AB4NT5S:/$
+roger@roger:/$
 ```
 
 ```console
-abantes@AB4NT5S:/usr/share/applications$ pwd
+roger@roger:/usr/share/applications$ pwd
 /usr/share/applications
-abantes@AB4NT5S:/usr/share/applications$
+roger@roger:/usr/share/applications$
 ```
 
 ```console
-abantes@AB4NT5S:/etc$ pwd
+roger@roger:/etc$ pwd
 /etc
-abantes@AB4NT5S:/etc$
+roger@roger:/etc$
 ```
