@@ -229,12 +229,8 @@ Pode acontecer de o seu nome ou email no git ser diferente do seu nome ou email 
 
 Primeiro ajuste o nome e email que você deseja no git:
 
-`git config --global user.name "Nome Correto"`
-`git config --global user.email emailcorreto@exemplo.br"`
-
-Faça o clone do repositório que você deseja ajustar os commits usando a flag `--bare`:
-
-`git clone --bare [repo]`
+* `git config --global user.name "Nome Correto"`
+* `git config --global user.email emailcorreto@exemplo.br"`
 
 Crie um script sh (dê o nome fixing-commits.sh para ficar intuitivo) com o seguinte conteúdo:
 
@@ -280,25 +276,24 @@ fi
 No console:
 
 ```console
+#clone do repositório que você deseja ajustar os commits usando a flag --bare
+git clone --bare [repo]
+
 # Navegue até o repositório pelo terminal
 cd [repo]
 
 # Rode o script sh
 fixing-commits.sh
-```
 
-É importante destacar que o script não precisa está na mesma pasta do projeto, mas no momento em que você roda o script você deve estar na pasta do projeto.
+# Faça o push
+git push --force --tags origin 'refs/heads/*'
 
-E então faça o push:
-
-`git push --force --tags origin 'refs/heads/*'`
-
-Para finalizar é importante deletar o repositório local para não correr o risoc de você commitar no repositório em modo bare:
-
-```console
+# Delete o repo pois não se usa ele em modo bare
 cd ..
 rm -rf [repo]
 ```
+
+É importante destacar que o script não precisa está na mesma pasta do projeto, mas no momento em que você roda o script você deve estar na pasta do projeto.
 
 # Bash
 
