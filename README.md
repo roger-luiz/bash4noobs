@@ -37,10 +37,10 @@
 
 # Git
 
-## Configurando o git
-
 1. Instalção: https://git-scm.com/downloads
 2. Documentação: https://git-scm.com/doc
+
+## Configurando o git
 
 Antes de começar a usar o git é importante que você tenha ele configurado corretamente em sua máquina.
 
