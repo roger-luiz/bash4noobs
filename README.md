@@ -9,7 +9,7 @@
   * [Padronização de commits ( Opcional )](#padronização-de-commits--opcional-)
   * [Ajustando o histórico de commits no github](#ajustando-o-histórico-de-commits-no-github)
 
-* Bash
+* [Bash](#bash)
   * [Atalhos globais do Bash](#atalhos-globais-do-bash)
   * [Diretórios](#diretórios)
   * [Ajuda no terminal](#ajuda-no-terminal)
