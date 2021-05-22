@@ -1,24 +1,21 @@
-## Sumário
+# Sumário
 
-* [Git](#git)
-  * [Configurando o git](#configurando-o-git)
-  * [Comandos](#comandos)
-  * [Alias ( Opcional )](#alias--opcional-)
-  * [Padronização de commits ( Opcional )](#padronização-de-commits--opcional-)
-  * [Ajustando o histórico de commits no github](#ajustando-o-histórico-de-commits-no-github)
-
-# Git
-
-1. Instalção: https://git-scm.com/downloads
-2. Documentação: https://git-scm.com/doc
+* [Configurando o git](#configurando-o-git)
+* [Comandos](#comandos)
+* [Alias ( Opcional )](#alias--opcional-)
+* [Padronização de commits ( Opcional )](#padronização-de-commits--opcional-)
+* [Ajustando o histórico de commits no github](#ajustando-o-histórico-de-commits-no-github)
 
 ## Configurando o git
 
+1. Instalção: https://git-scm.com/downloads
+2. Documentação: https://git-scm.com/do
+
 Antes de começar a usar o git é importante que você tenha ele configurado corretamente em sua máquina.
 
-* `git config --global user.name "Fulano de Tal"` - Nome. Coloque o mesmo nome do **github**;
-* `git config --global user.email fulanodetal@exemplo.br"` - Email. Coloque o mesmo email do **github**;
-* `git config --global core.editor vim` - Editor. Aqui você pode escolher o editor padrão do git;
+* `git config --global user.name "Fulano de Tal"` - Nome, coloque o mesmo nome do __github__;
+* `git config --global user.email fulanodetal@exemplo.br"` - Email, coloque o mesmo email do __github__;
+* `git config --global core.editor vim` - Editor, aqui você pode escolher o editor padrão do git;
 * `git config --list` - Use para ver o resultado das suas confirugarções.
 
 ## Comandos
@@ -30,36 +27,35 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
 * `git add [file]` - Adiciona ou atualiza mudanças para irem para o nosso repositório.
   * `git add .` - Você pode adicionar todos os arquivo usando o ".".
 
-* `git rm [file]` - Remove os arquivos que foram adcionados com o `git add`.
+* `git rm [file]` - Remove os arquivos que foram adicionados com o `git add`.
 
 * `git commit -m "message"` - Registra alterações no repositório.
-  * `git commit -am "message"` - Atualiza o repositório e registra alterações no repositório ao mesmo tempo.
-  * `git commit --amend -m "message"` - **Troca** a última mensagem feita no commit.
+  * `git commit --amend -m "message"` - __Troca__ a mensagem feita no último commit.
 
 * `git log` - Mostra os pontos na "linha do tempo" do repositório (commits).
-  * `git log --oneline` - Mostra os pontos na "linha do tempo" de forma mais resumida.
-  * `git log --abbrev-commit` - Ao invés de mostrar o hash com 40 caracteres, mostra apenas com 7 caracteres.
+  * `git log --oneline` - Mostra os pontos da "linha do tempo" de forma resumida.
+  * `git log --abbrev-commit` - Mostra o hash dos commits com 7 caracteres.
   * `git log --pretty=oneline` - Faz com que caiba toda a mesagem de commit em uma linha.
   * `git log --graph` - Desenha uma representação gráfica dos commits no lado esquerdo da saída do terminal.
-  * `git log --grep="texto"` - Busca por commits que tenha a a palavra "texto".
+  * `git log --grep="palavra"` - Busca por commits que tenha a palavra especificada.
 
 * `git diff` - Mostra o que foi alterado em um arquivo, de vermelho o que foi excluído, de verde o que foi adicionando. Use-o antes do `git add`.
 
 * `git show` - Apresenta o último ponto na "história" do nosso projeto.
   * `git show [hash]` - Apresenta determinado ponto na "história" do nosso projeto.
 
-* `git branch` - Lista, cria ou exclui ramificações.
-  * `git branch -d [ramificação]` - Exclui ramificações.
+* `git branch` - Lista e exclui ramificações do nosso repositório.
+  * `git branch -d [ramificação]` - Exclui uma ramificação.
 
 * `git checkout [hash]` - Alterna ramificações ou restaura arquivos da árvore de trabalho.
   * `git checkout -b [minha-feature]` - Cria uma nova ramificação no nosso projeto.
   * `git checkout [minha-ramificação]` - Vai para a ramificação criada pelo desenvolvedor.
   * `git checkout master` - Vai para a ramificação master.
-  * `git checkout -- [arquivo-modificado]` - Descarta as mudanças feitas no arquivo. Use antes de dar o `git add`.
+  * `git checkout -- [arquivo-modificado]` - Descarta as mudanças feitas no arquivo. Use antes do `git add`.
 
 * `git merge [branch]` - Faz a fusão de uma branch X com uma branch Y. Para fazer a fusão das branchs você tem que estar na branch que vai recber a outra branch.
 
-* `git mv [arquivo] [diretório]` - Move um arquivo para um diretório especificado
+* `git mv [arquivo] [diretório]` - Move um arquivo para um diretório especificado.
 * `git mv [nome-original] [novo-nome]` - Renomea um arquivo.
 
 * `git clean -f` - Remove arquivos não rastreados.
@@ -105,11 +101,13 @@ Alias que eu gosto de usar:
 
 ## Padronização de commits ( Opcional )
 
-Para poder padronizar seus commits, você vai precisar de duas ferramentas, o [commitlint](https://github.com/conventional-changelog/commitlint) e o [commitizen](https://github.com/commitizen/cz-cli), você pode instalar essas dependências usando o **npm** ou o **yarn**.
+Para poder padronizar seus commits, você pode usar duas ferramentas, o [commitlint](https://github.com/conventional-changelog/commitlint) e o [commitizen](https://github.com/commitizen/cz-cli), você pode instalar essas dependências usando o __npm__ ou o __yarn__. Você também pode usar a padronização sem nem uma ferramente.
 
-**Formato da mensagem**: Cada mensagem de commit consiste em um `cabeçalho`, um `corpo` e um `rodapé`.
+__Formato da mensagem__: Cada mensagem de commit consiste em um `cabeçalho`, um `corpo` e um `rodapé`.
 
-`Cabeçalho`: **O cabeçalho é obrigatório.** Tem um formato pré-definido, que inclui um `tipo` e um `título`:
+### Cabeçalho
+
+O cabeçalho é obrigatório, tem um formato pré-definido, que inclui um `tipo` e um `título`:
 
 ```
 <tipo>(<escopo opcional>): <título>
@@ -119,19 +117,11 @@ Para poder padronizar seus commits, você vai precisar de duas ferramentas, o [c
 <rodapé opcional>
 ```
 
-**Exemplos:**
-
-```
-fix(integracao-erp): xxxxxxx
-
-improve(app-toolbox): xxxxxxx
-
-docs: Instruções de iniciar projeto com docker
-```
-
 Qualquer linha da mensagem do commit não pode ter mais de 100 caracteres! Assim fica mais fácil para ler no GitHub, Gitlab e outras ferramentas de git.
 
-`Tipos`: Deve ser um dos seguintes:
+#### Tipos
+
+Deve ser um dos seguintes:
 
 * `build`: Alterações que afetam o sistema de build ou dependências externas.
 * `static`: Alterações no conteúdo de arquivos estáticos (dados .json, imagens, etc).
@@ -147,7 +137,19 @@ Qualquer linha da mensagem do commit não pode ter mais de 100 caracteres! Assim
 * `test`: Adicionando testes ausentes ou corrigindo testes existentes.
 * `revert`: Reverter para um commit anterior.
 
-**Emojis**: Emojis para o título do `commit`:
+#### Título
+
+O título contém uma descrição sucinta da mudança:
+
+* Use o imperativo, tempo presente: "mudança" não "mudou" nem "muda".
+* Não capitalize a primeira letra.
+* Sem ponto (.) no final.
+
+:x: RUIM: `git commit -m "add user.js"`
+
+:white_check_mark: BOM: `git commit -m ":recycle: - Migration created to person"`
+
+Emojis para o título do `commit`:
 
 | Commit type            | Emoji                                           |
 | :--------------------- | :---------------------------------------------- |
@@ -174,21 +176,13 @@ Qualquer linha da mensagem do commit não pode ter mais de 100 caracteres! Assim
 | Work In Progress (WIP) | :construction: `:construction:`                 |
 | Additional comments    | :speech_balloon: `:speech_balloon:`             |
 
-`Título`: O título contém uma descrição sucinta da mudança:
+### Corpo
 
-* use o imperativo, tempo presente: "mudança" não "mudou" nem "muda".
-* não capitalize a primeira letra.
-* sem ponto (.) no final.
+Um corpo de mensagem de commit mais longo PODE ser fornecido após o título, fornecendo informações contextuais adicionais sobre as alterações no código. Configure a mensagem com um wrap de 80 caracteres. Use para explicar "o que" e "porque" foi realizado essa modificação, ao invez de "como". O corpo DEVE começar depois de uma linha em branco após a descrição.
 
-:x: RUIM: `git commit -m "add user.js"`
+### Rodapé
 
-:white_check_mark: BOM: `git commit -m ":recycle: - Migration created to person"`
-
-`Corpo`: Um corpo de mensagem de commit mais longo PODE ser fornecido após o título, fornecendo informações contextuais adicionais sobre as alterações no código. Configure a mensagem com um wrap de 80 caracteres. Use para explicar "o que" e "porque" foi realizado essa modificação, ao invez de "como". O corpo DEVE começar depois de uma linha em branco após a descrição.
-
-`Rodapé`: Um rodapé PODE ser fornecido depois de uma linha em branco após o corpo. Caso exista um ticket no jira, criar um referência assim: `issue TP-666` ou `closes issue TP-666`.
-
-`Reverter um commit`: Se o commit reverte um commit anterior, ele deve começar por `revert:`, seguido pelo cabeçalho do commit revertido. No corpo, ele deve dizer: `Isso reverte o commit <hash> .`, onde o hash é o SHA do commit sendo revertido.
+Um rodapé PODE ser fornecido depois de uma linha em branco após o corpo. Caso exista um ticket no jira, criar um referência assim: `issue TP-666` ou `closes issue TP-666`.
 
 ### Por quê?
 
@@ -200,7 +194,7 @@ Qualquer linha da mensagem do commit não pode ter mais de 100 caracteres! Assim
 
 ## Ajustando o histórico de commits no github
 
-Pode acontecer de o seu nome ou email no git ser diferente do seu nome ou email do github. Isso pode afetar diretamente o seu número de commits no github (quadro branco com quadradinhos verdes). Mas para concertar é simples.
+Pode acontecer do seu nome ou email no git serem diferente do seu nome ou email do github. Isso pode afetar diretamente o seu número de commits no github (quadro branco com quadradinhos verdes). Mas para concertar é simples.
 
 Primeiro ajuste o nome e email que você deseja no git:
 
@@ -268,4 +262,4 @@ cd ..
 rm -rf [repo]
 ```
 
-É importante destacar que o script não precisa está na mesma pasta do projeto, mas no momento em que você roda o script você deve estar na pasta do projeto.
+É importante destacar que o script `não precisa` está na mesma pasta do projeto, mas no momento em que você roda o script você `deve estar` na pasta do projeto.
