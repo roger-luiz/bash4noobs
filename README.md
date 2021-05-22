@@ -4,6 +4,5 @@
   <img src=".github/linux_terminal.png"/>
 </p>
 
-[Tutorial de Bash](bash/README.md)
-
-[Tutorial de Git](git/README.md)
+- [X] [Tutorial de Bash](bash/README.md) - Aprenda a usar o poder da linha de comando.
+- [X] [Tutorial de Git](git/README.md) - Aprenda a manipular vrsões dos sesu projetos.
