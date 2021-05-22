@@ -1,10 +1,31 @@
 # Sumário
 
+* [Explicando alguns conceitos](#configurando-o-git)
 * [Configurando o git](#configurando-o-git)
 * [Comandos](#comandos)
 * [Alias ( Opcional )](#alias--opcional-)
 * [Padronização de commits ( Opcional )](#padronização-de-commits--opcional-)
 * [Ajustando o histórico de commits no github](#ajustando-o-histórico-de-commits-no-github)
+
+## Explicando alguns conceitos
+
+`Repositório`: O repositório é a pasta do projeto. Todo repositório tem uma pasta oculta `.git`. Isso é o que mostra o para o git e para você que existe  um repositório naquela pasta.
+
+`Commit`: Um commit é um grupo de alterações no código. Toda vez que você quiser "salvar" as alerações feitas por você no repositório, você commita essas mudanças. Um commit contém as alterações que foram feitas nele e uma mensagem descritiva, além de informações meta (data, autor, etc). O ideal é que os commits sejam feitos de forma lógica e organizada, por exemplo: Você criou uma alteração no layout e vai comitar ela depois, aos invés de fazer commits separados ("Adição de div no HTML", "Alteração do CSS", "Link do CSS"), faça um só commit ("Alteração no layout: <pequena descrição sobre a alteração>").
+
+`Branch`: Branches são separações de código. O branch padrão do projeto é o `master`. Branches normalmente são utilizados para separar __alterações grandes__ ou __novas funcionalidades__ do projeto, por exemplo: Existe um projeto de blog, os desenvolvedores já fizeram quase toda a parte do blog, mas existem alterações para fazer no sistema de usuário do blog e algumas a fazer no sistema de post do blog. Para isso, cria-se uma branch "users" e uma "posts" e fazem-se as aterações nessas branches, um time trabalha em cada uma dessas branches, enquanto isso, outro time continua trabalhando em pequenas mudanças ou bugkixies na branch master.
+
+`Merge`: Um merge é a união de duas brnches, normalmente, merges são feitos na branch master. No exemplo do blog, quando a alteração do blog for terminada, alguém vai unir essas alterações na branch master para que elas possam finalmente fazer parte do projeto de fato. Os merges constumam dar bastante problema, pois os códigos podem (e provavelmente vão entrar em conflito). Se houveram alterações no mesmo arquivo ou o git não conseguir definir se alguma linha deve ou não entrar no projeto por motivo de conflito, essas alterações deverão ser corrigidas manualmente.
+
+`Clone`: Um clone de um repositório funciona como uma branch de um repositório online em um repositório local. Ou seja, quando se deseja trabalhar em um repositório hospedado no github, clona-se esse repositório para o seu computador, trabalha-se nele, e então é pedido a permissão para atualizar as alterações online.
+
+`Pull`: É uma atualização do repositório local. É feito um merge de repositório online com o local para que os conflitos sejam resolvidos e seja possível eviar o código (sem conflitos) para o repositório online por meio de um push.
+
+`Push`: Enviar o código para o repositório online
+
+`Fork`: O fork é como um clone, porém dentro do Github. Isso quer dizer que o repositório não vai ser baixado para seu computador, mas será criado um igual na sua conta.
+
+`Pull Request`: um pull request é um pedido que faz ao dono do repositório para que esse atualize o código dele com o seu código. Ou seja, você pede para que o dono do projeto ao qaul você quer contribuir adicione suas modificações ap projeto oficial.
 
 ## Configurando o git
 
@@ -70,7 +91,7 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
 
 * `git pull` - Puxa do repositório remoto.
 
-## Alias ( Opcional )
+## Alias (Opcional)
 
 Você pode criar alias para os comandos do git, basta ir no arquivo ".gitconfig" e definir seus alias.
 No uninx (Linux e Mac) o arquivo ".gitconfig" fica localizado em: /home/seuusuário/.gitconfig
@@ -99,7 +120,7 @@ Alias que eu gosto de usar:
   rollback = reset --soft HEAD~1
 ```
 
-## Padronização de commits ( Opcional )
+## Padronização de commits (Opcional)
 
 Para poder padronizar seus commits, você pode usar duas ferramentas, o [commitlint](https://github.com/conventional-changelog/commitlint) e o [commitizen](https://github.com/commitizen/cz-cli), você pode instalar essas dependências usando o __npm__ ou o __yarn__. Você também pode usar a padronização sem nem uma ferramente.
 
