@@ -1,10 +1,10 @@
 # Sumário
 
-* [Explicando alguns conceitos](#configurando-o-git)
+* [Explicando alguns conceitos](#explicando-alguns-conceitos)
 * [Configurando o git](#configurando-o-git)
 * [Comandos](#comandos)
-* [Alias ( Opcional )](#alias--opcional-)
-* [Padronização de commits ( Opcional )](#padronização-de-commits--opcional-)
+* [Alias (Opcional)](#alias-opcional)
+* [Padronização de commits (Opcional)](#padronização-de-commits-opcional)
 * [Ajustando o histórico de commits no github](#ajustando-o-histórico-de-commits-no-github)
 
 ## Explicando alguns conceitos
