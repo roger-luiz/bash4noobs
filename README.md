@@ -11,5 +11,5 @@
 3. [Tutorial de Vim](vim/README.md) - Aprenda a usar o melhor que o vim tem a te oferecer.
 
 <p align="center">
-  By :heart_purple:
+  By Roger with :purple_heart:
 </p>
