@@ -1,16 +1,16 @@
 # Vim
 
-Eu escolhi usar o editor vim, mas você pode usar vários editores além do vim como o nano por exemplo.
+Eu escolhi usar o editor vim, mas você pode usar outros editores além do vim como o __nano__ por exemplo.
 
-O vim (VI Improvement) é uma melhoria do antigo editor de texto vi. Este por sua vez é uma melhoria do editor de texto orientado a linha chamado ed. Existe também uma versão do vim para ambiente X chamada gvim.
+O vim (VI Improvement) é uma melhoria do antigo editor de texto __vi__. Este por sua vez é uma melhoria do editor de texto orientado a linha chamado __ed__. Existe também uma versão do vim para ambiente X chamada __gvim__.
 
-O vim possui três formas de trabalho: **modo de linha**, **modo de edição** e **modo de comandos**. A mudança de um modo para outro modo é feita através do uso da tecla `Esc`.
+O vim possui três formas de trabalho: __modo de linha__, __modo de edição__ e __modo de comandos__. A mudança de um modo para outro modo é feita através do uso da tecla `Esc`.
 
-Após o arquivo ser aberto pelo vim, o modo de comandos é ativado. No modo de comandos, as teclas digitadas pelo usuário são interpretadas pelo vim como ações a serem executadas dentro do arquivo aberto. No modo de edição, as teclas digitadas pelo usuário são ecoadas na tela. Para entrar neste modo, pode-se digitar, por exemplo, "a" (adicionar), "i" (incluir), etc. No modo de linha, o usuário define ações a serem executadas no arquivo como um todo (por exemplo, salvar, substituir caracteres, sair do aplicativo, etc). Para entrar neste modo, deve-se digitar " : ".
+Após o arquivo ser aberto pelo vim, o modo de comando é ativado. No modo de comando, as teclas digitadas pelo usuário são interpretadas pelo vim como ações a serem executadas dentro do arquivo aberto. No modo de edição, as teclas digitadas pelo usuário são ecoadas na tela. Para entrar neste modo, pode-se digitar, por exemplo, "a" (adicionar), "i" (incluir), etc. No modo de linha, o usuário define ações a serem executadas no arquivo como um todo (por exemplo, salvar, substituir caracteres, sair do aplicativo, etc). Para entrar neste modo, deve-se digitar `Esc`.
 
 * `vim [opções] [arquivo]`
 
-São alguns dos comandos do vim no **modo de comandos**:
+São alguns dos comandos do vim no __modo de comandos__:
 
 * `0` - Mover o cursor para o início da linha em que o cursor está posicionado.
 * `a` - Inserir texto após a posição atual do cursor.
@@ -56,7 +56,7 @@ São alguns dos comandos do vim no **modo de comandos**:
 * `[n]+~+ENTER` - Inverter a caixa (case) dos n caracteres seguintes ao cursor.
 * `/texto` - Procurar pela primeira ocorrência do texto especificado a partir da posição atual do cursor.
 
-São alguns dos comandos do vim no **modo de linha**:
+São alguns dos comandos do vim no __modo de linha__:
 
 * `:r arquivo` - Incluir arquivo a partir da linha atual do cursor.
 * `:q+ENTER` - Sair da tela de ajuda.
