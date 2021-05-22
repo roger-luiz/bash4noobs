@@ -6,5 +6,6 @@
 
 ### Tutoriais
 
-1. [Tutorial de Bash](bash/README.md) - Aprenda a usar o poder da linha de comando.
-2. [Tutorial de Git](git/README.md) - Aprenda a manipular vrsões dos sesu projetos.
+1. [Tutorial de Bash](bash/README.md) - Aprenda a usar o poder da linha de comando;
+2. [Tutorial de Git](git/README.md) - Aprenda a manipular vrsões dos sesu projetos;
+3. [Tutorial de Git](vim/README.md) - Aprenda a usar o melhor que o vim te a te oferecer.
