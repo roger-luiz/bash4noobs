@@ -35,7 +35,7 @@ __`Pull Request`__: um pull request é um pedido que faz ao dono do repositório
 Antes de começar a usar o git é importante que você tenha ele configurado corretamente em sua máquina.
 
 * `git config --global user.name "Fulano de Tal"`: Nome, coloque o mesmo nome do __github__;
-* `git config --global user.email fulanodetal@exemplo.br"`: Email, coloque o mesmo email do __github__;
+* `git config --global user.email fulanodetal@exemplo.br`: Email, coloque o mesmo email do __github__;
 * `git config --global core.editor vim`: Editor, aqui você pode escolher o editor padrão do git;
 * `git config --list`: Use para ver o resultado das suas confirugarções.
 
