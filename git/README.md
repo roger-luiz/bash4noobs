@@ -122,7 +122,13 @@ Alias que eu gosto de usar:
 
 ## Padronização de commits (Opcional)
 
-Para poder padronizar seus commits, você pode usar duas ferramentas, o [commitlint](https://github.com/conventional-changelog/commitlint) e o [commitizen](https://github.com/commitizen/cz-cli), você pode instalar essas dependências usando o __npm__ ou o __yarn__. Você também pode usar a padronização sem nem uma ferramente.
+De acordo com a documentação do __Convetional Commits__, Commits Semânticos são uma convenção simples para ser utilizada nas mensagens de commit. Essa convenção define um conjunto de regras para criar um histórico de commit explícito, o que facilita a criação de ferramentas automatizadas.
+
+Esses commits auxiliarão você e sua equipe a entenderem de forma facilitada quais alterações foram realizadas no trecho de código que foi commitado.
+
+Essa identificação ocorre por meio de uma palavra e emoji que identifica se aquele commit realizado se trata de uma alteração de código, atualização de pacotes, documentação, alteração de visual, teste...
+
+Para poder padronizar seus commits, você pode usar duas ferramentas, o [commitlint](https://github.com/conventional-changelog/commitlint) e o [commitizen](https://github.com/commitizen/cz-cli), você pode instalar essas dependências usando o __npm__ ou o __yarn__.
 
 __Formato da mensagem__: Cada mensagem de commit consiste em um `cabeçalho`, um `corpo` e um `rodapé`.
 
