@@ -128,6 +128,14 @@ Esses commits auxiliarão você e sua equipe a entenderem de forma facilitada qu
 
 Essa identificação ocorre por meio de uma palavra e emoji que identifica se aquele commit realizado se trata de uma alteração de código, atualização de pacotes, documentação, alteração de visual, teste...
 
+Mas por que devo padronnizar meus commits?
+
+* Criação automatizada de CHANGELOGs;
+* Determinar automaticamente um aumento de versionamento semântico (com base nos tipos de commits);
+* Comunicar a natureza das mudanças para colegas de equipe, o público e outras partes interessadas de forma padronizada
+* Disparar processos de build e deploy;
+* Facilitar a contribuição de outras pessoas em seus projetos, permitindo que eles explorem um histórico de commits mais estruturado e com melhor rastreabilidade.
+
 Para poder padronizar seus commits, você pode usar duas ferramentas, o [commitlint](https://github.com/conventional-changelog/commitlint) e o [commitizen](https://github.com/commitizen/cz-cli), você pode instalar essas dependências usando o __npm__ ou o __yarn__.
 
 __Formato da mensagem__: Cada mensagem de commit consiste em um `cabeçalho`, um `corpo` e um `rodapé`.
@@ -210,14 +218,6 @@ Um corpo de mensagem de commit mais longo PODE ser fornecido após o título, fo
 ### Rodapé
 
 Um rodapé PODE ser fornecido depois de uma linha em branco após o corpo. Caso exista um ticket no jira, criar um referência assim: `issue TP-666` ou `closes issue TP-666`.
-
-### Por quê?
-
-* Criação automatizada de CHANGELOGs;
-* Determinar automaticamente um aumento de versionamento semântico (com base nos tipos de commits);
-* Comunicar a natureza das mudanças para colegas de equipe, o público e outras partes interessadas de forma padronizada
-* Disparar processos de build e deploy;
-* Facilitar a contribuição de outras pessoas em seus projetos, permitindo que eles explorem um histórico de commits mais estruturado e com melhor rastreabilidade.
 
 ## Ajustando o histórico de commits no github
 
