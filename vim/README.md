@@ -1,5 +1,7 @@
 # Vim
 
+[screenshot](screenshot.png)
+
 Eu escolhi usar o editor vim, mas você pode usar outros editores além do vim como o __nano__ por exemplo.
 
 O vim (VI Improvement) é uma melhoria do antigo editor de texto __vi__. Este por sua vez é uma melhoria do editor de texto orientado a linha chamado __ed__. Existe também uma versão do vim para ambiente X chamada __gvim__.
