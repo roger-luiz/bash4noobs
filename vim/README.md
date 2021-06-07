@@ -4,7 +4,7 @@ Eu escolhi usar o editor vim, mas você pode usar outros editores além do vim c
 
 O vim (VI Improvement) é uma melhoria do antigo editor de texto __vi__. Este por sua vez é uma melhoria do editor de texto orientado a linha chamado __ed__. Existe também uma versão do vim para ambiente X chamada __gvim__.
 
-O vim possui três formas de trabalho: __modo de linha__, __modo de edição__ e __modo de comandos__. A mudança de um modo para outro modo é feita através do uso da tecla `Esc`.
+O vim possui três formas de trabalho: `modo de linha`, `modo de edição` e `modo de comandos`. A mudança de um modo para outro modo é feita através do uso da tecla `Esc`.
 
 Após o arquivo ser aberto pelo vim, o modo de comando é ativado. No modo de comando, as teclas digitadas pelo usuário são interpretadas pelo vim como ações a serem executadas dentro do arquivo aberto. No modo de edição, as teclas digitadas pelo usuário são ecoadas na tela. Para entrar neste modo, pode-se digitar, por exemplo, "a" (adicionar), "i" (incluir), etc. No modo de linha, o usuário define ações a serem executadas no arquivo como um todo (por exemplo, salvar, substituir caracteres, sair do aplicativo, etc). Para entrar neste modo, deve-se digitar `Esc`.
 
@@ -66,7 +66,7 @@ São alguns dos comandos do vim no __modo de linha__:
 * `:X`: Criptografa o arquivo.
 * `:n`: Ir para a linha "n". Exemplo: Para ir para linha 10 do arquivo, :10
 
-Busca
+Busca:
 
 * `/palavra`: Procura por "palavra" do início para o fim.
 * `?palavra`: Procura por "palavra" do fim para o início.
@@ -80,7 +80,7 @@ Busca
 * `/^\n\{3}`: Procura por três linhas em branco.
 * `:bufdo /palavra/`: Procura "palavra" em todos os arquivos abertos.
 
-Substituição
+Substituição:
 
 * `:%s/antigo/novo/g`: Substitui todas as ocorrências de "antigo" por "novo" no arquivo.
 * `:%s/antigo/novo/gw`: Substitui todas as ocorrências com confirmação.
@@ -103,7 +103,7 @@ Substituição
 * `Ctrl+x`: Decrementa o número sob o cursor.
 * `ggVGg?`: Muda o texto usando Rot13.
 
-Minúsculo / Maiúsculo
+Minúsculo / Maiúsculo:
 
 * `Vu`: Torna todos os caracteres da linha minúsculos.
 * `VU`: Torna todos os caracteres da linha maiúsculos.
@@ -118,14 +118,14 @@ Minúsculo / Maiúsculo
 * `:%s/.*/\u&`: Coloca a primeira letra de cada linha em maiúscula.
 * `:%s/.*/\l&`: Coloca a primeira letra de cada linha em minúscula.
 
-Lendo/Gravando arquivos
+Lendo/Gravando arquivos:
 
 * `:1,10 w arquivo`: Salva as linhas de 1 a 10 em "arquivo".
 * `:1,10 w >> arquivo`: Adiciona as linhas de 1 a 10 em "Arquivo".
 * `:r arquivo`: Insere o conteúdo de "arquivo" no atual.
 * `:23r arquivo`: Insere o conteúdo de "arquivo" a partir da linha 23.
 
-Explorando arquivos
+Explorando arquivos:
 
 * `:e .`: Abre o gerenciador de arquivos integrado do Vim.
 * `:Sex`: Divide a janela e abre o gerenciador de arquivos integrado.
@@ -137,20 +137,20 @@ Explorando arquivos
 * `:grep expressao *.php`: retorna uma lista de arquivos .php que contenham a expressão informada.
 * `gf`: Abre o arquivo sob o cursor.
 
-Interação com o Linux
+Interação com o Linux:
 
 * `:!pwd`: Executa o comando "pwd" e retorna para o Vim.
 * `!!pwd`: Executa o comando "pwd" e insere a saída no buffer.
 * `:sh`: Retorna temporariamente para o shell.
 * `exit`: Retorna para o Vim.
 
-Alinhamento
+Alinhamento:
 
 * `:%!fmt`: Alinha todas as linhas.
 * `!}fmt`: Alinha todas as linhas a partir da posição corrente.
 * `5!!fmt`: Alinha as próximas 5 linhas.
 
-Abas
+Abas:
 
 * `:tabnew`: Cria uma nova aba.
 * `gt`: Mostra a próxima aba.
@@ -160,7 +160,7 @@ Abas
 * `:tabdo %s/foo/bar/g`: Executa um comando em todas as abas.
 * `:tab ball`: Coloca todos os arquivos abertos em abas.
 
-Divisão da janela do Vim
+Divisão da janela do Vim:
 
 * `:e arquivo`: Edita "arquivo" na janela corrente.
 * `:split arquivo`: Divide a janela e abre "arquivo".
@@ -175,24 +175,24 @@ Divisão da janela do Vim
 * `:only`: Fecha todas as janelas, exceto a janela atual.
 * `:b 2`: Abre #2 na janela corrente.
 
-Auto-completion do texto
+Auto-completion do texto:
 
 * `Ctrl+n Ctrl+p (em modo de inserção)`: Completa palavra.
 * `Ctrl+x Ctrl+l`: Completa linha.
 * `:set dictionary=dict`: Define dict como o dicionário atual.
 * `Ctrl+x Ctrl+k`: Completa usando o dicionário.
 
-Marcações
+Marcações:
 
 * `mk`: Marca a posição corrente como k.
 * `‘k`: Move o cursor para a marca k.
 * `d’k`: Apaga tudo até a marca k.
 
-Abreviações
+Abreviações:
 
 * `:ab email me@me.com`: Define email como abreviação de me@me.com.
 
-Identação de Texto
+Identação de Texto:
 
 * `:set autoindent`: Liga a identação automática.
 * `:set smartindent`: Liga a identação inteligente.
@@ -201,7 +201,7 @@ Identação de Texto
 * `>>`: Identa.
 * `<<`: Deidenta.
 
-Marcação de sintaxe
+Marcação de sintaxe:
 
 * `:syntax on`: Liga a marcação de sintaxe.
 * `:syntax off`: Desliga a marcação de sintaxe.
