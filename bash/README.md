@@ -1,6 +1,12 @@
 # Roadmap
 
-* [Explicando alguns conceitos]()
+* [Explicando alguns conceitos](#explicando-alguns-conceitos)
+ * [Terminal](#terminal)
+ * [Console](#console)
+ * [Emulador de terminal](#emulador-de-terminal)
+ * [Shell](#shell)
+ * [Linha de comandos - CLI](#linha-de-comandos---cli)
+ * []()
 * [Atalhos globais do Bash](#atalhos-globais-do-bash)
 * [Diretórios](#diretórios)
 * [Ajuda no terminal](#ajuda-no-terminal)
@@ -72,7 +78,7 @@ Quando pressionamos a tecla que faça o nosso comando ser executado, geralmente 
 
 Agora que vimos o que é uma linha de comando e o que é um shell, vamos entender quais são suas diferenças, já que os dois são bem semelhantes.
 
-###Shell vs Linha de comandos
+### Shell vs Linha de comandos
 
 A linha de comando não passa de uma interface, na qual, nós escrevemos os comandos. Já o shell é um programa especial que consegue interpretar esse comandos que estamos digitando.
 
