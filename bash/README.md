@@ -477,6 +477,8 @@ __Observação__: Para sair bastas digitar 'quit' e apertar enter ou 'Ctrl+d'.
 
 ## Referências
 
-* Video - [Bóson Treinamentos - O que são Terminal, Console, Shell e CLI](https://www.youtube.com/watch?v=gItWfeDMLVg&list=PLucm8g_ezqNqz-DVT9n_z-XjRkQ03m7U5&index=10&t=0s)
+* [Curso de Linux - Primeiros Passos](https://www.youtube.com/watch?v=6nN2EglOqCM&list=PLHz_AreHm4dlIXleu20uwPWFOSswqLYbV)
+* [Curso de Linux Básico / Certificação LPIC - 1](https://www.youtube.com/watch?v=UsHiWIgxj2M&list=PLucm8g_ezqNp92MmkF9p_cj4yhT-fCTl7)
+* [linux4noobs](https://github.com/LucasHe4rt/linux4noobs)
 
 [VOLTAR AO TOPO](#roadmap)
