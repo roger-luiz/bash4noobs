@@ -8,13 +8,13 @@
   * [Linha de comandos - CLI](#linha-de-comandos---cli)
   * [Shell vs Linha de comandos](#shell-vs-linha-de-comandos)
 
-* [Básico antes dos comandos]()
+* [Básico antes dos comandos](#básico-antes-dos-comandos)
   * [Atalhos globais do Bash](#atalhos-globais-do-bash)
   * [Diretórios](#diretórios)
   * [Ajuda no terminal](#ajuda-no-terminal)
   * [Histórico de comandos](#histórico-de-comandos)
 
-* [Manipulando arquivos]()
+* [Manipulando arquivos](#manipulando-arquivos)
   * [Listagem de arquivos](#listagem-de-arquivos)
   * [Entrando e saíndo de diretórios](#entrando-e-saíndo-de-diretórios)
   * [Exibindo o diretório atual](#exibindo-o-diretório-atual)
@@ -27,11 +27,11 @@
   * [Visualização de arquivos](#visualização-de-arquivos)
   * [Compressão de arquivos](#compressão-de-arquivos)
 
-* [Buscas]()
+* [Buscas](#buscas)
   * [Buscando por arquivos](#buscando-por-arquivos)
   * [Referência global](#referência-global)
 
-* [Sistema]()
+* [Sistema](#sistema)
   * [Processos](#processos)
   * [Informações do sistema](#informações-do-sistema)
   * [Memória](#memória)
@@ -39,7 +39,7 @@
   * [Usuários](#usuários)
   * [Calculadora](#calculadora)
 
-* [Referências]()
+* [Referências](#referências)
 
 # Explicando alguns conceitos
 
@@ -478,3 +478,5 @@ __Observação__: Para sair bastas digitar 'quit' e apertar enter ou 'Ctrl+d'.
 ## Referências
 
 * Video - [Bóson Treinamentos - O que são Terminal, Console, Shell e CLI](https://www.youtube.com/watch?v=gItWfeDMLVg&list=PLucm8g_ezqNqz-DVT9n_z-XjRkQ03m7U5&index=10&t=0s)
+
+[VOLTAR AO TOPO](#roadmap)
