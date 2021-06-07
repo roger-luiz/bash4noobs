@@ -7,44 +7,53 @@
   * [Shell](#shell)
   * [Linha de comandos - CLI](#linha-de-comandos---cli)
   * [Shell vs Linha de comandos](#shell-vs-linha-de-comandos)
+
+* [Básico antes dos comandos]()
   * [Atalhos globais do Bash](#atalhos-globais-do-bash)
-* [Diretórios](#diretórios)
-* [Ajuda no terminal](#ajuda-no-terminal)
-* [Listagem de arquivos](#listagem-de-arquivos)
-* [Entrando e saíndo de diretórios](#entrando-e-saíndo-de-diretórios)
-* [Exibindo o diretório atual](#exibindo-o-diretório-atual)
-* [Criando diretórios](#criando-diretórios)
-* [Exibindo o tamanho de um diretório](#exibindo-o-tamanho-de-um-diretório)
-* [Criando arquivos](#criando-arquivos)
-* [Excluíndo diretórios e arquivos](#excluíndo-diretórios-e-arquivos)
-* [Copiando diretórios e arquivos](#copiando-diretórios-e-arquivos)
-* [Movendo e renomeando arquivos e pastas](#movendo-e-renomeando-arquivos-e-pastas)
-* [Visualização de arquivos](#visualização-de-arquivos)
-* [Buscando por arquivos](#buscando-por-arquivos)
-* [Calculadora](#calculadora)
-* [Processos](#processos)
-* [Informações do sistema](#informações-do-sistema)
-* [Memória](#memória)
-* [Programas e atualizações](#programas-e-atualizações)
-* [Compressão de arquivos](#compressão-de-arquivos)
-* [Histórico de comandos](#histórico-de-comandos)
-* [Referência global](#referência-global)
-* [Usuários](#usuários)
+  * [Diretórios](#diretórios)
+  * [Ajuda no terminal](#ajuda-no-terminal)
+  * [Histórico de comandos](#histórico-de-comandos)
+
+* [Manipulando arquivos]()
+  * [Listagem de arquivos](#listagem-de-arquivos)
+  * [Entrando e saíndo de diretórios](#entrando-e-saíndo-de-diretórios)
+  * [Exibindo o diretório atual](#exibindo-o-diretório-atual)
+  * [Exibindo o tamanho de um diretório](#exibindo-o-tamanho-de-um-diretório)
+  * [Criando diretórios](#criando-diretórios)
+  * [Criando arquivos](#criando-arquivos)
+  * [Excluíndo diretórios e arquivos](#excluíndo-diretórios-e-arquivos)
+  * [Copiando diretórios e arquivos](#copiando-diretórios-e-arquivos)
+  * [Movendo e renomeando arquivos e pastas](#movendo-e-renomeando-arquivos-e-pastas)
+  * [Visualização de arquivos](#visualização-de-arquivos)
+  * [Compressão de arquivos](#compressão-de-arquivos)
+
+* [Buscas]()
+  * [Buscando por arquivos](#buscando-por-arquivos)
+  * [Referência global](#referência-global)
+
+* [Sistema]()
+  * [Processos](#processos)
+  * [Informações do sistema](#informações-do-sistema)
+  * [Memória](#memória)
+  * [Programas e atualizações](#programas-e-atualizações)
+  * [Usuários](#usuários)
+  * [Calculadora](#calculadora)
+
 * [Referências]()
 
-## Explicando alguns conceitos
+# Explicando alguns conceitos
 
-### Terminal
+## Terminal
 
 O terminal é um ambiente para entrada e saída de comandos, a palavra terminal também pode significar um dispositivo no qual podemos interagir com o computador, como por exemplo um teclado e monitor. No caso do terminal que estamos habituados ele é um software que emula os terminais tradicionais.
 
-### Console
+## Console
 
 O console é um tipo especial de terminal. Geralmente é um painel de controle conectado a um computador. Originalmente um console é um dispositivo eletrônico no qual nos permite controlar um computador, por meio de entrada de texto e saída de vídeo.
 
 No linux, nós também temos o console porém geralmente acessamos o console quando temos uma distribuição no modo texto, ou seja, sem interface gráfica.
 
-### Emulador de terminal
+## Emulador de terminal
 
 Os terminais em software, também podem ser chamados de pseudo-terminais ou terminais virtuais, são softwares fornecidos por programas, específicos, que são do tipo emulador de terminais, alguns exemplos deles são:
 
@@ -55,7 +64,7 @@ Os terminais em software, também podem ser chamados de pseudo-terminais ou term
 * Termux
 * Sakura
 
-### Shell
+## Shell
 
 O shell é um interpretador de linha de comandos. É a interface primária que nós vemos, caso o sistema não possuir interface gráfica, ao fazermos login, e sua função básica é iniciar outros programas e executar comandos. Quando estamos falando de linux, o shell se refere a shell de linha de comandos, alguns exemplos de shells comuns no linux:
 
@@ -64,7 +73,7 @@ O shell é um interpretador de linha de comandos. É a interface primária que n
 * zsh
 * fish
 
-### Linha de comandos - CLI
+## Linha de comandos - CLI
 
 Uma linha de comandos, ou CLI que é um acrônimo para _command line interface_, é uma interface na qual nós podemos digitar comandos e pressionarmos alguma tecla para que o comando seja, de fato, executado. Ou seja, na linha de comando nós não temos botões, menus, mouse, atalhos entre outros itens que possam ser clicados com o mouse.
 
@@ -78,11 +87,13 @@ Quando pressionamos a tecla que faça o nosso comando ser executado, geralmente 
 
 Agora que vimos o que é uma linha de comando e o que é um shell, vamos entender quais são suas diferenças, já que os dois são bem semelhantes.
 
-### Shell vs Linha de comandos
+## Shell vs Linha de comandos
 
 A linha de comando não passa de uma interface, na qual, nós escrevemos os comandos. Já o shell é um programa especial que consegue interpretar esse comandos que estamos digitando.
 
 __Observação__: No __Linux__ tudo é representado em forma de __arquivos__, um usuário do terminal é represtentado como um arquivo, assim como os própios comandos, os hardwares conectados na máquina, diretórios e etc.
+
+# Básico antes dos comandos
 
 ## Atalhos globais do Bash
 
@@ -124,6 +135,14 @@ Você pode consultar a documentação e o manual de uso dos comandos das seguint
 * `man [comando]`: Manual do comando.
 * `info [comando]`: Semelhante ao man, mas geralmente fornece informações mais detalhadas.
 
+## Histórico de comandos
+
+* `history`: Lista o histórico de 2000 comandos digitados.
+* `!!`: Repete o último comando.
+* `Seta para cima e seta para baixo`: Últimos comandos digitados.
+
+# Manipulando arquivos
+
 ## Listagem de arquivos
 
 Podemos listar o conteúdo de um diretório utilizando o comando ls.
@@ -164,6 +183,12 @@ Podemos entrar e sair de um diretório utilizando o comando cd.
 
 [Ver exemplo](examples/exibindo-o-diretorio-atual.md)
 
+## Exibindo o tamanho de um diretório
+
+* `du [diretório]`: Exibe o tamanho de um diretório e todos os seus subdiretórios.
+
+[Ver exemplo](examples/exibindo-o-tamanho-de-um-diretorio.md)
+
 ## Criando diretórios
 
 Podemos criar diretórios utilizando o comando mkdir.
@@ -173,12 +198,6 @@ Podemos criar diretórios utilizando o comando mkdir.
 * `mkdir -p A/B/C`: Cria a pasta A, dentro da pasta A cria a pasta B e dentro da pasta B cria a pasta C.
 
 [Ver exemplo](examples/criando-diretorios.md)
-
-## Exibindo o tamanho de um diretório
-
-* `du [diretório]`: Exibe o tamanho de um diretório e todos os seus subdiretórios.
-
-[Ver exemplo](examples/exibindo-o-tamanho-de-um-diretorio.md)
 
 ## Criando arquivos
 
@@ -257,6 +276,24 @@ O comando mv também é usado para renomear arquivos.
 
 [Ver exemplo](examples/visualizacao-de-arquivos.md)
 
+## Compressão de arquivos
+
+* `tar cf pacote.tar [arquivos]`: Cria um pacote TAR (nomeado pacote.tar) com os arquivos especificados.
+* `tar xf pacote.tar`: Extrai os arquivos de "pacote.tar" (substituir a variável pacote.tar pelo nome do arquivo).
+
+* `tar czf pacote.tar.gz [arquivos]`: Cria um pacote TAR (nomeado pacote.tar.gz) com compressão GZip.
+* `tar xzf pacote.tar.gz`: Extrai um pacote TAR (nomeado pacote.tar.gz) com compressão GZip.
+
+* `tar cjf pacote.tar.bz2 [arquivos]`: Cria um pacote TAR (nomeado pacote.tar.bz2) com compressão BZip2.
+* `tar xjf pacote.tar.bz2`: Extrai um pacote TAR (nomeado pacote.tar.gz) com compressão BZip2.
+
+* `gzip arq`: Compacta um arquivo e o renomeia para arq.gz (substituir a variável arq pelo nome do arquivo).
+* `gzip -d arq.gz`: Descompacta arq.gz para um arquivo (substituir a variável arq.gz pelo nome do arquivo).
+
+[Ver exemplo](examples/compressao-de-arquivos.md)
+
+# Buscas
+
 ## Buscando por arquivos
 
 Podemos buscar por arquivos específicos em todo nosso sistema com o comando find.
@@ -267,13 +304,24 @@ Podemos buscar por arquivos específicos em todo nosso sistema com o comando fin
 
 [Ver exemplo](examples/buscando-por-arquivos.md)
 
-## Calculadora
+## Referência global
 
-* `bc`: Abre uma calculadora do Bash
+Referências globais são recursos para especificar um ou mais arquivos ou diretórios de uma vez. Vamos usar o comando 'ls' para os exemplos, mas pode ser usado __qualquer__ outro comando.
 
-__Observação__: Para sair bastas digitar 'quit' e apertar enter ou 'Ctrl+d'.
+* `ls /etc/*.conf`: Lista todos os arquivos que tem a extenção '.conf'.
+* `ls /etc/*x*`: Lista todos os aquivos que em algum lugar do nome tem a lera 'x'.
+* `ls /etc/f*`: Lista todos os aquivos que começa com a letra 'f'.
+* `ls /etc/?as*`: Lista todos os arquivos que começa com uma letra qualquer, tem segundo caractere 'a', o terceiro 's' e qualquer caractere depois.
+* `ls /etc/???a*`: Lista todos os arquivos que tem o quarto caractere 'a'.
+* `ls /etc/f[a-t]*`: Lista todos os aqruivos que começa com a letra 'f', depois a segunda letra varia do 'a' ao 't' e depois qualquer caractere.
+* `ls /etc/f[u,o]*`: Lista todos os aqruivos que começa com a letra 'f', depois a segunda letra é 'u' ou 'o' e depois qualquer caractere.
+* `ls /etc/?[a,e,i,o,u]*`: Lista todos os aqruivos que começa com uma letra qualquer, depois a segunda letra é uma vogal e depois qualquer caractere.
+* `ls /etc/?[a,e,i,o,u]???`: Lista todos os aqruivos que começa com uma letra qualquer, depois a segunda letra é uma vogal e depois tem mais 3 caracteres qualquer.
+* `ls /etc/?{am,ul}*`: Lista todos os aqruivos que começa com uma letra qualquer, depois a segunda e a terceira letra é 'am' ou 'ul' e depois qualquer caractere.
+* `ls /etc/*{ev,ux}`: Lista todos os aqruivos que termina com 'ev' ou 'ux'.
+* `ls /etc/*.{conf,db}`: Lista todos os aqruivos que tem a extenção '.conf' ou '.db'.
 
-[Ver exemplo](examples/calculadora.md)
+# Sistema
 
 ## Processos
 
@@ -344,50 +392,11 @@ __Observação__: Quando você for digitar sua senha para entrar no modo usuári
 
 __Observação__: Se você estiver logado como usuário root, não é necessário o uso do 'sudo' na frente dos comandos.
 
-## Compressão de arquivos
-
-* `tar cf pacote.tar [arquivos]`: Cria um pacote TAR (nomeado pacote.tar) com os arquivos especificados.
-* `tar xf pacote.tar`: Extrai os arquivos de "pacote.tar" (substituir a variável pacote.tar pelo nome do arquivo).
-
-* `tar czf pacote.tar.gz [arquivos]`: Cria um pacote TAR (nomeado pacote.tar.gz) com compressão GZip.
-* `tar xzf pacote.tar.gz`: Extrai um pacote TAR (nomeado pacote.tar.gz) com compressão GZip.
-
-* `tar cjf pacote.tar.bz2 [arquivos]`: Cria um pacote TAR (nomeado pacote.tar.bz2) com compressão BZip2.
-* `tar xjf pacote.tar.bz2`: Extrai um pacote TAR (nomeado pacote.tar.gz) com compressão BZip2.
-
-* `gzip arq`: Compacta um arquivo e o renomeia para arq.gz (substituir a variável arq pelo nome do arquivo).
-* `gzip -d arq.gz`: Descompacta arq.gz para um arquivo (substituir a variável arq.gz pelo nome do arquivo).
-
-[Ver exemplo](examples/compressao-de-arquivos.md)
-
-## Histórico de comandos
-
-* `history`: Lista o histórico de 2000 comandos digitados.
-* `!!`: Repete o último comando.
-* `Seta para cima e seta para baixo`: Últimos comandos digitados.
-
-## Referência global
-
-Referências globais são recursos para especificar um ou mais arquivos ou diretórios de uma vez. Vamos usar o comando 'ls' para os exemplos, mas pode ser usado __qualquer__ outro comando.
-
-* `ls /etc/*.conf`: Lista todos os arquivos que tem a extenção '.conf'.
-* `ls /etc/*x*`: Lista todos os aquivos que em algum lugar do nome tem a lera 'x'.
-* `ls /etc/f*`: Lista todos os aquivos que começa com a letra 'f'.
-* `ls /etc/?as*`: Lista todos os arquivos que começa com uma letra qualquer, tem segundo caractere 'a', o terceiro 's' e qualquer caractere depois.
-* `ls /etc/???a*`: Lista todos os arquivos que tem o quarto caractere 'a'.
-* `ls /etc/f[a-t]*`: Lista todos os aqruivos que começa com a letra 'f', depois a segunda letra varia do 'a' ao 't' e depois qualquer caractere.
-* `ls /etc/f[u,o]*`: Lista todos os aqruivos que começa com a letra 'f', depois a segunda letra é 'u' ou 'o' e depois qualquer caractere.
-* `ls /etc/?[a,e,i,o,u]*`: Lista todos os aqruivos que começa com uma letra qualquer, depois a segunda letra é uma vogal e depois qualquer caractere.
-* `ls /etc/?[a,e,i,o,u]???`: Lista todos os aqruivos que começa com uma letra qualquer, depois a segunda letra é uma vogal e depois tem mais 3 caracteres qualquer.
-* `ls /etc/?{am,ul}*`: Lista todos os aqruivos que começa com uma letra qualquer, depois a segunda e a terceira letra é 'am' ou 'ul' e depois qualquer caractere.
-* `ls /etc/*{ev,ux}`: Lista todos os aqruivos que termina com 'ev' ou 'ux'.
-* `ls /etc/*.{conf,db}`: Lista todos os aqruivos que tem a extenção '.conf' ou '.db'.
-
 ## Usuários
 
 ### Trocando senha de usuários
 
-O passwd é um comando utilizado para configurar ou trocar a senha das contas dos usuários do sistema. É necessário possuir privilégios administrativos para executá-lo, mas um usuário comum consegue alterar sua própria senha.
+O `passwd` é um comando utilizado para configurar ou trocar a senha das contas dos usuários do sistema. É necessário possuir privilégios administrativos para executá-lo, mas um usuário comum consegue alterar sua própria senha.
 
 * `passwd [usuário]`: Troca/Configura a senha de um determinado usruário.
   * `passwd -l [usuário]`: Trava a senha do usuário, ficando impedido de se logar e não pode trocar a senha (não é desabilitado).
@@ -457,6 +466,14 @@ Para removermos um usuário utilizamos o comando userdel.
 * `userdel [nomeusuario]`: Remove um usuário.
   * `userdel -h [nomeusuario]`: Exibe as opções do comando.
   * `userdel -r [nomeusuario]`: Deleta a home e todos os seus arquivos.
+
+## Calculadora
+
+* `bc`: Abre uma calculadora do Bash
+
+__Observação__: Para sair bastas digitar 'quit' e apertar enter ou 'Ctrl+d'.
+
+[Ver exemplo](examples/calculadora.md)
 
 ## Referências
 
