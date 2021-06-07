@@ -1,7 +1,5 @@
 # Roadmap
 
-[![screenshot](screenshot.png) 
-
 * [Explicando alguns conceitos](#explicando-alguns-conceitos)
   * [Terminal](#terminal)
   * [Console](#console)
