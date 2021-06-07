@@ -1,6 +1,8 @@
-# Vim
+<h1 align="center">Vim</h1>
 
-[screenshot](screenshot.png)
+<p align="center">
+  <img src="screenshot.png"/>
+</p>
 
 Eu escolhi usar o editor vim, mas você pode usar outros editores além do vim como o __nano__ por exemplo.
 
