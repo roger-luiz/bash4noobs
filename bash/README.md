@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../.github/linux_terminal.png"/>
+</p>
+
 # Roadmap
 
 * [Explicando alguns conceitos](#explicando-alguns-conceitos)
