@@ -5,9 +5,5 @@
 - [X] [Tutorial de Git](git/README.md): Aprenda a manipular versões dos sesu projetos;
 
 <p align="center">
-  <img src=".github/linux_terminal.png"/>
-</p>
-
-<p align="center">
   By Roger with :purple_heart:
 </p>
