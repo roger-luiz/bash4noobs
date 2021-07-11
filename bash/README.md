@@ -1,3 +1,7 @@
+<h1 align="center">
+  Bash (Ubuntu)
+</h1>
+
 <p align="center">
   <img src="../.github/linux_terminal.png"/>
 </p>
