@@ -73,14 +73,13 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
 
 ### Intermediário
 
-* `git branch`: Lista e exclúi ramificações do nosso repositório.
-  * `git branch -d [ramificação]`: Exclui uma ramificação.
+* `git branch`: Lista ramificações do nosso repositório.
+  * `git branch -d [ramificação]`: Exclui uma ramificação do nosso repositório.
 
-* `git checkout [hash]`: Alterna ramificações ou restaura arquivos da árvore de trabalho.
+* `git checkout [hash]`: Restaura arquivos da árvore de trabalho.
   * `git checkout -b [minha-feature]`: Cria uma nova ramificação no nosso projeto.
   * `git checkout [minha-ramificação]`: Vai para a ramificação criada pelo desenvolvedor.
   * `git checkout master`: Vai para a ramificação master.
-  * `git checkout -- [file]`: Descarta as mudanças feitas no arquivo. Use antes do `git add`.
 
 * `git merge [branch]`: Faz a fusão de uma branch X com uma branch Y. Para fazer a fusão das branchs você tem que estar na branch que vai recber a outra branch.
 
