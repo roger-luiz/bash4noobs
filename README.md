@@ -2,11 +2,11 @@
 
 [Bash](bash/README.md): 
 
-Entenda a estrutura de diretórios, manipule arquivos, busque por infotmações do sistema de forma simples.
+Entenda a estrutura de diretórios, manipule arquivos e processos, busque por informações do sistema de forma simples.
 
 [Tutorial de Git](git/README.md):
 
-Aprenda a usar os comandos mais úteis no seu dia a dia como dev extraíndo o melhor do Git;
+Aprenda a usar os comandos mais úteis no seu dia a dia como dev extraíndo o melhor do Git.
 
 [Tutorial de Vim](vim/README.md): 
 
