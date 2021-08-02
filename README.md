@@ -1,21 +1,20 @@
 # Tutorial Git e Bash
 
-- [X] [Tutorial de Bash](bash/README.md): Aprenda a usar o poder da linha de comando;
+- [X] [Bash](bash/README.md): Entenda a estrutura de diretórios, manipule arquivos, busque por infotmações do sistema de forma simples.
+- [X] [Tutorial de Git](git/README.md): Aprenda a usar os comandos mais úteis no seu dia a dia como dev extraíndo o melhor do Git;
 - [X] [Tutorial de Vim](vim/README.md): Aprenda a usar o melhor que o vim tem a te oferecer.
-- [X] [Tutorial de Git](git/README.md): Aprenda a manipular versões dos sesu projetos;
 
 ## Como eu posso contribuir
 
 Além de compartilhar você pode:
 
-1. Crie um fork deste repositório;
-2. Crie uma branch com o nome da sua feature: **`git checkout -b my-feature`**;
-3. Faça o commit das mudanças: **`git commit -m 'feat: My new feature'`**;
-4. Faça o push da sua branch: **`git push origin my-feature`**.
+1. Manter o conteúdo atualizado;
+2. Corrigir erros de ortografia;
+3. Adicionar mais conteúdo;
+4. Simplificar explicaçõe;
+5. Etc.
 
-Após a mesclagem do seu pull request, você pode excluir sua branch.
-
-Você pode reportar bugs [aqui](https://github.com/abantes/gitbash4noobs/issues).
+Lembre-se, contribuições são sempre bem-vindas, não importa quão grandes ou pequenas são!
 
 <p align="center">
   By Roger with :purple_heart:
