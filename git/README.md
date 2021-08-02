@@ -56,7 +56,8 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
 * `git add [file]`: Adiciona ou atualiza mudanças para irem para o nosso repositório.
   * `git add .`: Você pode adicionar todos os arquivo usando o ".".
 
-* `git rm [file]`: Remove os arquivos que foram adicionados com o `git add`.
+* `git reset`: Remove os arquivos que foram adicionados com o `git add`. Use antes do `git commit`
+  * `git reset [file]`: Remove um arquivo específico que foram adicionados com o `git add`.
 
 * `git commit -m "message"`: Registra alterações no repositório.
   * `git commit --amend -m "message"`: __Troca__ a mensagem feita no último commit.
@@ -64,28 +65,29 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
 * `git log`: Mostra os pontos na "linha do tempo" do repositório (commits).
   * `git log --oneline`: Mostra os pontos da "linha do tempo" de forma resumida.
   * `git log --abbrev-commit`: Mostra o hash dos commits com 7 caracteres.
-  * `git log --pretty=oneline`: Faz com que caiba toda a mesagem de commit em uma linha.
   * `git log --graph`: Desenha uma representação gráfica dos commits no lado esquerdo da saída do terminal.
-  * `git log --grep="palavra"`: Busca por commits que tenha a palavra especificada.
+  * `git log --grep="palavra"`: Busca por commits que tenha a palavra ou parte dela especificada.
 
 * `git diff`: Mostra o que foi alterado em um arquivo, de vermelho o que foi excluído, de verde o que foi adicionando. Use-o antes do `git add`.
 
 * `git show`: Apresenta o último ponto na "história" do nosso projeto.
   * `git show [hash]`: Apresenta determinado ponto na "história" do nosso projeto.
 
-* `git branch`: Lista e exclui ramificações do nosso repositório.
+* `git branch`: Lista e exclúi ramificações do nosso repositório.
   * `git branch -d [ramificação]`: Exclui uma ramificação.
 
 * `git checkout [hash]`: Alterna ramificações ou restaura arquivos da árvore de trabalho.
   * `git checkout -b [minha-feature]`: Cria uma nova ramificação no nosso projeto.
   * `git checkout [minha-ramificação]`: Vai para a ramificação criada pelo desenvolvedor.
   * `git checkout master`: Vai para a ramificação master.
-  * `git checkout -- [arquivo-modificado]`: Descarta as mudanças feitas no arquivo. Use antes do `git add`.
+  * `git checkout -- [file]`: Descarta as mudanças feitas no arquivo. Use antes do `git add`.
 
 * `git merge [branch]`: Faz a fusão de uma branch X com uma branch Y. Para fazer a fusão das branchs você tem que estar na branch que vai recber a outra branch.
 
 * `git mv [arquivo] [diretório]`: Move um arquivo para um diretório especificado.
 * `git mv [nome-original] [novo-nome]`: Renomea um arquivo.
+
+* `git rm -f [file]`: Remove os arquivos que foram adicionados com o `git add` forçadamente.
 
 * `git clean -f`: Remove arquivos não rastreados.
 
@@ -97,7 +99,7 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
 
 * `git clone [link-do-repositório]`: Clonar um projeto / repositório.
 
-* `git pull`: Puxa do repositório remoto.
+* `git pull`: Puxa as alterações feitas no repositório remoto (Github por exemplo).
 
 ## Alias (Opcional)
 
