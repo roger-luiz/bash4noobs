@@ -49,6 +49,8 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
 
 ## Comandos
 
+### Básico
+
 * `git init`: Cria um repositório git vazio.
 
 * `git status`: Informa o estado das alterações do nosso projeto.
@@ -56,22 +58,20 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
 * `git add [file]`: Adiciona ou atualiza mudanças para irem para o nosso repositório.
   * `git add .`: Você pode adicionar todos os arquivo usando o ".".
 
-* `git reset`: Remove os arquivos que foram adicionados com o `git add`. Use antes do `git commit`
-  * `git reset [file]`: Remove um arquivo específico que foi adicionado com o `git add`.
-
 * `git commit -m "message"`: Registra alterações no repositório.
-  * `git commit --amend -m "message"`: __Troca__ a mensagem feita no último commit.
 
 * `git log`: Mostra os pontos na "linha do tempo" do repositório (commits).
   * `git log --oneline`: Mostra os pontos da "linha do tempo" de forma resumida.
-  * `git log --abbrev-commit`: Mostra o hash dos commits com 7 caracteres.
-  * `git log --graph`: Desenha uma representação gráfica dos commits no lado esquerdo da saída do terminal.
-  * `git log --grep="palavra"`: Busca por commits que tenha a palavra ou parte dela especificada.
 
-* `git diff`: Mostra o que foi alterado em um arquivo, de vermelho o que foi excluído, de verde o que foi adicionando. Use-o antes do `git add`.
+* `git remote`: Verifica se existe um repositório remoto.
 
-* `git show`: Apresenta o último ponto na "história" do nosso projeto.
-  * `git show [hash]`: Apresenta determinado ponto na "história" do nosso projeto.
+* `git push`: Envia alterações locais para o repositório remoto.
+
+* `git clone [link-do-repositório]`: Clonar um projeto / repositório.
+
+* `git pull`: Puxa as alterações feitas no repositório remoto (Github por exemplo).
+
+### Intermediário
 
 * `git branch`: Lista e exclúi ramificações do nosso repositório.
   * `git branch -d [ramificação]`: Exclui uma ramificação.
@@ -84,22 +84,29 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
 
 * `git merge [branch]`: Faz a fusão de uma branch X com uma branch Y. Para fazer a fusão das branchs você tem que estar na branch que vai recber a outra branch.
 
+### Avançado
+
+* `git commit --amend -m "message"`: __Troca__ a mensagem feita no último commit por uma outra messagem.
+
+* `git log --abbrev-commit`: Mostra o hash dos commits com 7 caracteres.
+* `git log --graph`: Desenha uma representação gráfica dos commits no lado esquerdo da saída do terminal.
+* `git log --grep="palavra"`: Busca por commits que tenha uma palavra ou parte de uma especificada.
+
+* `git reset`: Remove os arquivos que foram adicionados com o `git add`. Use antes do `git commit`
+  * `git reset [file]`: Remove um arquivo específico que foi adicionado com o `git add`.
+  * `git reset --hard [hash]`: Reverte um commit.
+
+* `git diff`: Mostra o que foi alterado em um arquivo, de vermelho o que foi excluído, de verde o que foi adicionando. Use-o antes do `git add`.
+
+* `git show`: Apresenta o último ponto na "história" do nosso projeto.
+  * `git show [hash]`: Apresenta determinado ponto na "história" do nosso projeto.
+
 * `git mv [arquivo] [diretório]`: Move um arquivo para um diretório especificado.
 * `git mv [nome-original] [novo-nome]`: Renomea um arquivo.
 
-* `git rm -f [file]`: Remove os arquivos que foram adicionados com o `git add` forçadamente.
+* `git rm -f [file]`: Exclúi os arquivos do nosso repositório forçadamente.
 
-* `git clean -f`: Remove arquivos não rastreados.
-
-* `git reset --hard [hash]`: Reverte um commit.
-
-* `git remote`: Verifica se existe um repositório remoto.
-
-* `git push`: Envia alterações locais para o repositório remoto.
-
-* `git clone [link-do-repositório]`: Clonar um projeto / repositório.
-
-* `git pull`: Puxa as alterações feitas no repositório remoto (Github por exemplo).
+* `git clean -f`: Remove arquivos não rastreados forçadamente.
 
 ## Alias (Opcional)
 
