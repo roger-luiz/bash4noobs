@@ -57,7 +57,7 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
   * `git add .`: Você pode adicionar todos os arquivo usando o ".".
 
 * `git reset`: Remove os arquivos que foram adicionados com o `git add`. Use antes do `git commit`
-  * `git reset [file]`: Remove um arquivo específico que foram adicionados com o `git add`.
+  * `git reset [file]`: Remove um arquivo específico que foi adicionado com o `git add`.
 
 * `git commit -m "message"`: Registra alterações no repositório.
   * `git commit --amend -m "message"`: __Troca__ a mensagem feita no último commit.
