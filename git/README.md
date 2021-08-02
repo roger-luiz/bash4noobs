@@ -59,9 +59,18 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
   * `git add .`: Você pode adicionar todos os arquivo usando o ".".
 
 * `git commit -m "message"`: Registra alterações no repositório.
+  * `git commit --amend -m "message"`: __Troca__ a mensagem feita no último commit por uma outra messagem.
 
 * `git log`: Mostra os pontos na "linha do tempo" do repositório (commits).
   * `git log --oneline`: Mostra os pontos da "linha do tempo" de forma resumida.
+  * `git log --abbrev-commit`: Mostra o hash dos commits com 7 caracteres.
+  * `git log --graph`: Desenha uma representação gráfica dos commits no lado esquerdo da saída do terminal.
+  * `git log --grep="palavra"`: Busca por commits que tenha uma palavra ou parte de uma especificada.
+
+* `git diff`: Mostra o que foi alterado em um arquivo, de vermelho o que foi excluído, de verde o que foi adicionando. Use-o antes do `git add`.
+
+* `git show`: Apresenta o último ponto na "história" do nosso projeto.
+  * `git show [hash]`: Apresenta determinado ponto na "história" do nosso projeto.
 
 * `git remote`: Verifica se existe um repositório remoto.
 
@@ -71,7 +80,11 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
 
 * `git pull`: Puxa as alterações feitas no repositório remoto (Github por exemplo).
 
-### Intermediário
+### Avançado
+
+* `git reset`: Remove os arquivos que foram adicionados com o `git add`. Use antes do `git commit`
+  * `git reset [file]`: Remove um arquivo específico que foi adicionado com o `git add`.
+  * `git reset --hard [hash]`: Reverte um commit.
 
 * `git branch`: Lista ramificações do nosso repositório.
   * `git branch -d [ramificação]`: Exclui uma ramificação do nosso repositório.
@@ -82,23 +95,6 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
   * `git checkout master`: Vai para a ramificação master.
 
 * `git merge [branch]`: Faz a fusão de uma branch X com uma branch Y. Para fazer a fusão das branchs você tem que estar na branch que vai recber a outra branch.
-
-### Avançado
-
-* `git commit --amend -m "message"`: __Troca__ a mensagem feita no último commit por uma outra messagem.
-
-* `git log --abbrev-commit`: Mostra o hash dos commits com 7 caracteres.
-* `git log --graph`: Desenha uma representação gráfica dos commits no lado esquerdo da saída do terminal.
-* `git log --grep="palavra"`: Busca por commits que tenha uma palavra ou parte de uma especificada.
-
-* `git reset`: Remove os arquivos que foram adicionados com o `git add`. Use antes do `git commit`
-  * `git reset [file]`: Remove um arquivo específico que foi adicionado com o `git add`.
-  * `git reset --hard [hash]`: Reverte um commit.
-
-* `git diff`: Mostra o que foi alterado em um arquivo, de vermelho o que foi excluído, de verde o que foi adicionando. Use-o antes do `git add`.
-
-* `git show`: Apresenta o último ponto na "história" do nosso projeto.
-  * `git show [hash]`: Apresenta determinado ponto na "história" do nosso projeto.
 
 * `git mv [arquivo] [diretório]`: Move um arquivo para um diretório especificado.
 * `git mv [nome-original] [novo-nome]`: Renomea um arquivo.
