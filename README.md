@@ -14,12 +14,12 @@ Aprenda a usar o melhor que o vim tem a te oferecer.
 
 ## Como eu posso contribuir
 
-Além de compartilhar você pode:
+Além de __compartilhar__ você pode:
 
 1. Manter o conteúdo atualizado;
 2. Corrigir erros de ortografia;
 3. Adicionar mais conteúdo;
-4. Simplificar explicaçõe;
+4. Simplificar explicações;
 5. Etc.
 
 Lembre-se, contribuições são sempre bem-vindas, não importa quão grandes ou pequenas são!
