@@ -55,11 +55,11 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
 
 * `git status`: Informa o estado das alterações do nosso projeto.
 
-* `git add [file]`: Adiciona ou atualiza mudanças para irem para o nosso repositório.
-  * `git add .`: Você pode adicionar todos os arquivo usando o ".".
+* `git add [arquivo]`: Adiciona novos arquivos ou atualiza mudanças para irem para o nosso repositório.
+  * `git add .`: Você pode adicionar todos os arquivo usando o "." (ponto).
 
 * `git commit -m "message"`: Registra alterações no repositório.
-  * `git commit --amend -m "message"`: __Troca__ a mensagem feita no último commit por uma outra messagem.
+  * `git commit --amend -m "nova menssagem"`: __Troca__ a mensagem (e somente a mensagem) feita no último commit por uma outra messagem.
 
 * `git log`: Mostra os pontos na "linha do tempo" do repositório (commits).
   * `git log --oneline`: Mostra os pontos da "linha do tempo" de forma resumida.
@@ -83,14 +83,14 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
 ### Avançado
 
 * `git reset`: Remove os arquivos que foram adicionados com o `git add`. Use antes do `git commit`
-  * `git reset [file]`: Remove um arquivo específico que foi adicionado com o `git add`.
-  * `git reset --hard [hash]`: Reverte um commit.
+  * `git reset [arquivo]`: Remove um arquivo específico que foi adicionado com o `git add`.
+  * `git reset --hard [hash]`: Reverte um commit. Vai para um determinado ponto da "história" do projeto.
 
 * `git branch`: Lista ramificações do nosso repositório.
   * `git branch -d [ramificação]`: Exclui uma ramificação do nosso repositório.
 
 * `git checkout [hash]`: Restaura arquivos da árvore de trabalho.
-  * `git checkout -b [minha-feature]`: Cria uma nova ramificação no nosso projeto.
+  * `git checkout -b [minha-ramificação]`: Cria uma nova ramificação no nosso projeto.
   * `git checkout [minha-ramificação]`: Vai para a ramificação criada pelo desenvolvedor.
   * `git checkout master`: Vai para a ramificação master.
 
