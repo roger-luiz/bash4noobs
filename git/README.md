@@ -35,6 +35,8 @@ __`Fork`__: O fork é como um clone, porém dentro do Github. Isso quer dizer qu
 
 __`Pull Request`__: um pull request é um pedido que faz ao dono do repositório para que esse atualize o código dele com o seu código. Ou seja, você pede para que o dono do projeto ao qaul você quer contribuir adicione suas modificações ap projeto oficial.
 
+---
+
 ## Configurando o git
 
 1. Instalção: https://git-scm.com/downloads
