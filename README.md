@@ -1,8 +1,16 @@
 # Tutorial Git e Bash
 
-- [X] [Bash](bash/README.md): Entenda a estrutura de diretórios, manipule arquivos, busque por infotmações do sistema de forma simples.
-- [X] [Tutorial de Git](git/README.md): Aprenda a usar os comandos mais úteis no seu dia a dia como dev extraíndo o melhor do Git;
-- [X] [Tutorial de Vim](vim/README.md): Aprenda a usar o melhor que o vim tem a te oferecer.
+[Bash](bash/README.md): 
+
+Entenda a estrutura de diretórios, manipule arquivos, busque por infotmações do sistema de forma simples.
+
+[Tutorial de Git](git/README.md):
+
+Aprenda a usar os comandos mais úteis no seu dia a dia como dev extraíndo o melhor do Git;
+
+[Tutorial de Vim](vim/README.md): 
+
+Aprenda a usar o melhor que o vim tem a te oferecer.
 
 ## Como eu posso contribuir
 
