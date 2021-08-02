@@ -105,6 +105,8 @@ Antes de começar a usar o git é importante que você tenha ele configurado cor
 
 * `git clean -f`: Remove arquivos não rastreados forçadamente.
 
+---
+
 ## Alias (Opcional)
 
 Você pode criar alias para os comandos do git, basta ir no arquivo ".gitconfig" e definir seus alias.
@@ -133,6 +135,8 @@ Alias que eu gosto de usar:
   undo = checkout --
   rollback = reset --soft HEAD~1
 ```
+
+---
 
 ## Padronização de commits (Opcional)
 
@@ -232,6 +236,8 @@ Um corpo de mensagem de commit mais longo PODE ser fornecido após o título, fo
 ### Rodapé
 
 Um rodapé PODE ser fornecido depois de uma linha em branco após o corpo. Caso exista um ticket no jira, criar um referência assim: `issue TP-666` ou `closes issue TP-666`.
+
+---
 
 ## Ajustando o histórico de commits no github
 
