@@ -4,7 +4,7 @@
 - [X] [Tutorial de Vim](vim/README.md): Aprenda a usar o melhor que o vim tem a te oferecer.
 - [X] [Tutorial de Git](git/README.md): Aprenda a manipular versões dos sesu projetos;
 
-## 🤔 Como eu posso contribuir
+## Como eu posso contribuir
 
 Além de compartilhar você pode:
 
