@@ -4,11 +4,11 @@
 
 Entenda a estrutura de diretórios, manipule arquivos e processos, busque por informações do sistema de forma simples.
 
-[Tutorial de Git](git/README.md):
+[Git](git/README.md):
 
 Aprenda a usar os comandos mais úteis no seu dia a dia como dev extraíndo o melhor do Git.
 
-[Tutorial de Vim](vim/README.md): 
+[Vim](vim/README.md): 
 
 Aprenda a usar o melhor que o vim tem a te oferecer.
 
