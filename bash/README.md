@@ -105,18 +105,19 @@ __Observação__: No __Linux__ tudo é representado em forma de __arquivos__, um
 
 ## Atalhos globais do Bash
 
+Comando          | Ação
 -----------------|------------
 Ctrl + Shift + C | Copiar.
 Ctrl + Shift + V | Colar.
 Ctrl + Shift + C | Copiar.
 Ctrl + Shift + V | Colar.
-Ctrl + C | Cancela o comando atual em funcionamento.
-Ctrl + Z | Pausa o comando atual, retorna com "fg" em primeiro plano Linux ou "bg" em segundo plano.
-Ctrl + D | Faz o logout da sessão atual (similar ao comando "exit").
-Ctrl + W | Apaga uma palavra na linha atual.
-Ctrl + U | Apaga a linha inteira.
-Ctrl + R | Tecle para Exiber um comando recente.
-Ctrl + L | Limpa a tela.
+Ctrl + C         | Cancela o comando atual em funcionamento.
+Ctrl + Z         | Pausa o comando atual, retorna com "fg" em primeiro plano Linux ou "bg" em segundo plano.
+Ctrl + D         | Faz o logout da sessão atual (similar ao comando "exit").
+Ctrl + W         | Apaga uma palavra na linha atual.
+Ctrl + U         | Apaga a linha inteira.
+Ctrl + R         | Tecle para Exiber um comando recente.
+Ctrl + L         | Limpa a tela.
 
 * `Ctrl + Shift + C`: Copiar.
 * `Ctrl + Shift + V`: Colar.
