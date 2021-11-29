@@ -105,49 +105,59 @@ __Observação__: No __Linux__ tudo é representado em forma de __arquivos__, um
 
 ## Atalhos globais do Bash
 
-* `Ctrl + Shift + C`: Copiar.
-* `Ctrl + Shift + V`: Colar.
-* `Ctrl + C`: Cancela o comando atual em funcionamento.
-* `Ctrl + Z`: Pausa o comando atual, retorna com "fg" em primeiro plano Linux ou "bg" em segundo plano.
-* `Ctrl + D`: Faz o logout da sessão atual (similar ao comando "exit").
-* `Ctrl + W`: Apaga uma palavra na linha atual.
-* `Ctrl + U`: Apaga a linha inteira.
-* `Ctrl + R`: Tecle para Exiber um comando recente.
-* `Ctrl + L`: Limpa a tela.
+Comando            | Ação
+-------------------|------------
+`Ctrl + Shift + C` | Copiar.
+`Ctrl + Shift + V` | Colar.
+`Ctrl + Shift + C` | Copiar.
+`Ctrl + Shift + V` | Colar.
+`Ctrl + C`         | Cancela o comando atual em funcionamento.
+`Ctrl + Z`         | Pausa o comando atual, retorna com "fg" em primeiro plano Linux ou "bg" em segundo plano.
+`Ctrl + D`         | Faz o logout da sessão atual (similar ao comando "exit").
+`Ctrl + W`         | Apaga uma palavra na linha atual.
+`Ctrl + U`         | Apaga a linha inteira.
+`Ctrl + R`         | Tecle para Exiber um comando recente.
+`Ctrl + L`         | Limpa a tela.
 
 ## Diretórios
 
-* `/`: É o diretório raiz, todos os demais diretórios estão abaixo dele.
-* `/bin/`: Binários principais dos usuários.
-* `/boot/`: Arquivos do sistema de Boot.
-* `/dev/`: Arquivos de dispositivos.
-* `/etc/`: Arquivos de configuração do sistema.
-* `/home/`: Diretório dos usuários comuns do sistema.
-* `/lib/`: Bibliotecas essenciais do sistema e os módulos do kernel.
-* `/media/`: Diretório de montagem e dispositivos.
-* `/mnt/`: Diretório de montagem de dispositivos - mesmo que "media".
-* `/opt/`: Instalação de programas não oficiais da distribuição ou por conta do usuário.
-* `/sbin/`: Armazena arquivos executáveis que representam comandos administrativos. Exemplo: shutdown
-* `/srv/`: Diretório para dados de serviços fornecidos pelo sistema.
-* `/tmp/`: Diretório para arquivos temporários.
-* `/usr/`: Segunda hierarquia do sistema, onde ficam os usuários comuns do sistema e programas.
-* `/var/`: Diretório com arquivos variáveis gerados pelos programas do sistema. Exemplo: logs, spool de impressoras, e-mail e cache.
-* `/root/`: Diretório do usuário root - O usuário root tem o total poder sobre o sistema. Podendo instalar, desinstalar e configurar.
+Caminho    | Descrição
+-----------|------------
+`/`        | É o diretório raiz, todos os demais diretórios estão abaixo dele.
+`/bin/`    | Binários principais dos usuários.
+`/boot/`   | Arquivos do sistema de Boot.
+`/dev/`    | Arquivos de dispositivos.
+`/etc/`    | Arquivos de configuração do sistema.
+`/home/`   | Diretório dos usuários comuns do sistema.
+`/lib/`    | Bibliotecas essenciais do sistema e os módulos do kernel.
+`/media/`  | Diretório de montagem e dispositivos.
+`/mnt/`    | Diretório de montagem de dispositivos - mesmo que "media".
+`/opt/`    | Instalação de programas não oficiais da distribuição ou por conta do usuário.
+`/sbin/`   | Armazena arquivos executáveis que representam comandos administrativos. Exemplo: shutdown
+`/srv/`    | Diretório para dados de serviços fornecidos pelo sistema.
+`/tmp/`    | Diretório para arquivos temporários.
+`/usr/`    | Segunda hierarquia do sistema, onde ficam os usuários comuns do sistema e programas.
+`/var/`    | Diretório com arquivos variáveis gerados pelos programas do sistema. Exemplo: logs, spool de impressoras, e-mail e cache.
+`/root/`   | Diretório do usuário root - O usuário root tem o total poder sobre o sistema. Podendo instalar, desinstalar e configurar.
 * `/proc/`: Diretório virtual controlado pelo Kernel com configuração total do sistema.
 
 ## Ajuda no terminal
 
 Você pode consultar a documentação e o manual de uso dos comandos das seguintes maneiras:
 
-* `[comando] --help`: Documentação do comando.
-* `man [comando]`: Manual do comando.
-* `info [comando]`: Semelhante ao man, mas geralmente fornece informações mais detalhadas.
+Comando             | Ação
+--------------------|------------
+`[comando] --help`  | Monsta a documentação do comando.
+`man [comando]`     | Monstra o manual do comando.
+`info [comando]`    | Semelhante ao man, mas geralmente fornece informações mais detalhadas.
 
 ## Histórico de comandos
 
-* `history`: Lista o histórico de 2000 comandos digitados.
-* `!!`: Repete o último comando.
-* `Seta para cima e seta para baixo`: Últimos comandos digitados.
+Comando                              | Ação
+-------------------------------------|------------
+`history`                            | Lista o histórico de 2000 comandos digitados.
+`!!`                                 | Repete o último comando.
+`Seta para cima e seta para baixo`   | Últimos comandos digitados.
 
 # Manipulando arquivos
 
@@ -155,19 +165,15 @@ Você pode consultar a documentação e o manual de uso dos comandos das seguint
 
 Podemos listar o conteúdo de um diretório utilizando o comando ls.
 
-* `ls`: Lista arquivos e diretórios.
-  * `ls -r`: Lista arquivos e diretórios em ordem reversa.
-  * `ls -a`: Lista todos os arquivos e diretórios, incluindo arquivos ocultos.
-  * `ls -l`: Formato longo, mostra permissões, número de links, propietário, grupo, tamanho, data de modificação e nome do arquivo.
-  * `ls -h`: Lista arquivos e diretórios com informações formatadas ( Tem que ser usado com o -l ).
-  * `ls -ls`: Lista arquivos e diretórios pelo tamanho, no caso começará pelo o arquivo de maior tamanho.
-  * `ls -R`: Lista os arquivos e pastas recursivamente da pasta selecionada.
-  * `ls -m`: Arquivos listados em sequência, separados por vírgula.
-  * `ls -n`: Semelhante ao -l, porém mostra UID E GID Em vez de nomes de proprietário e grupo.
-  * `ls -o`: Semelhante ao -l, porém não mostra o grupo do arquivo.
-  * `ls -p`: Mostra uma barra ( / ) na frente de nomes de diretórios.
-  * `ls -A`: Semelhante ao -a, mas não mostra o diretório corrente ( . ) ou o diretório acima ( .. ).
-  * `ls -i`: Mostra o número do inode de cada arquivo na primeira coluna.
+Comando      | Ação
+-------------|------------
+`ls`         | Lista arquivos e diretórios.
+`ls -a`      | Lista todos os arquivos e diretórios, incluindo arquivos ocultos.
+`ls -l`      | Formato longo, mostra permissões, número de links, propietário, grupo, tamanho, data de modificação e nome do arquivo.
+`ls -h`      | Lista arquivos e diretórios com informações formatadas (Tem que ser usado com o -l).
+`ls -ls`     | Lista arquivos e diretórios pelo tamanho, no caso começará pelo o arquivo de maior tamanho.
+`ls -R`      | Lista os arquivos e pastas recursivamente da pasta selecionada.
+`ls -p`      | Mostra uma barra (/) na frente de nomes de diretórios.
 
 [Ver exemplo](examples/listagem-de-arquivos.md)
 
@@ -175,25 +181,31 @@ Podemos listar o conteúdo de um diretório utilizando o comando ls.
 
 Podemos entrar e sair de um diretório utilizando o comando cd.
 
-* `cd .`: Diretório atual.
-* `cd ..`: Volta um diretório.
-* `cd /`: Vai direto para o diretório raiz.
-* `cd ~`: Vai direto para o diretório home.
-* `cd -`: Nos retorna para o último diretório acessado.
-* `cd /[destino]`: Partindo da raiz até o último diretório passado como referência.
-* `cd [destino]`: Parte do local corrente até o diretório passado como referência.
+Comando           | Ação
+------------------|------------
+`cd .`            | Diretório atual.
+`cd ..`           | Volta um diretório.
+`cd /`            | Vai direto para o diretório raiz.
+`cd ~`            | Vai direto para o diretório home.
+`cd -`            | Nos retorna para o último diretório acessado.
+`cd /[destino]`   | Partindo da raiz até o último diretório passado como referência.
+`cd [destino]`    | Parte do local corrente até o diretório passado como referência.
 
 [Ver exemplo](examples/entrando-e-saindo-de-diretorios.md)
 
 ## Exibindo o diretório atual
 
-* `pwd`: Exibe o caminho de diretório atual.
+Comando     | Ação
+------------|------------
+`pwd`       | Exibe o caminho de diretório atual.
 
 [Ver exemplo](examples/exibindo-o-diretorio-atual.md)
 
 ## Exibindo o tamanho de um diretório
 
-* `du [diretório]`: Exibe o tamanho de um diretório e todos os seus subdiretórios.
+Comando            | Ação
+-------------------|------------
+`du [diretório]`   | Exibe o tamanho de um diretório e todos os seus subdiretórios.
 
 [Ver exemplo](examples/exibindo-o-tamanho-de-um-diretorio.md)
 
@@ -201,9 +213,11 @@ Podemos entrar e sair de um diretório utilizando o comando cd.
 
 Podemos criar diretórios utilizando o comando mkdir.
 
-* `mkdir [nome-do-diretorio]`: Cria uma pasta.
-* `mkdir pasta1 pasta2 pasta3`: Cria três pastas, pasta1, pasta2 e pasta3.
-* `mkdir -p A/B/C`: Cria a pasta A, dentro da pasta A cria a pasta B e dentro da pasta B cria a pasta C.
+Comando                        | Ação
+-------------------------------|------------
+`mkdir [nome-do-diretorio]`    | Cria uma pasta.
+`mkdir pasta1 pasta2 pasta3`   | Cria três pastas, pasta1, pasta2 e pasta3.
+`mkdir -p A/B/C`               | Cria a pasta A, dentro da pasta A cria a pasta B e dentro da pasta B cria a pasta C.
 
 [Ver exemplo](examples/criando-diretorios.md)
 
@@ -211,13 +225,10 @@ Podemos criar diretórios utilizando o comando mkdir.
 
 Podemos criar arquivos utilizando o comando touch.
 
-* `touch [arquivo]`: Cria uma arquivo.
-  * `touch -a [arquivo]`: Altera a hora de acesso do arquivo.
-  * `touch -m [arquivo]`: Altera a hora de modificação do arquivo.
-  * `touch -am [arquivo]`: Altera a hora de acesso e modificação do arquivo.
-  * `touch -c [arquivo]`: Altera a hora de acesso sem criar um novo arquivo.
-
-__Observação__: podemos gerar nomes automáticos usando as chaves `{}`, desta maneira: `touch exemplo{1..3}.txt`, este comando irá criar 3 arquivos chamados exemplo1.txt, exemplo2.txt e exemplo3.txt.
+Comando                      | Ação
+-----------------------------|------------
+`touch [arquivo]`            | Cria uma arquivo.
+`touch exemplo{1..3}.txt`    | Cria 3 arquivos, exemplo1.txt, exemplo2.txt e exemplo3.txt.
 
 [Ver exemplo](examples/criando-arquivos.md)
 
@@ -225,11 +236,13 @@ __Observação__: podemos gerar nomes automáticos usando as chaves `{}`, desta 
 
 Podemos excluir arquivos utilizando o comando rm.
 
-* `rm [arquivo]`: Exclui um arquivo.
-  * `rm -f [arquivo]`: Exclui arquivos forçadamente.
-  * `rm -r [arquivo]`: Exclui o diretório e os arquivos na direção recursiva, o diretório especificado junto com seu subdiretório e arquivos.
-  * `rm -d [arquivo]`: Remove somente diretórios vazios.
-  * `rm -i [arquivo]`: Pergunta se queremos remover o arquivo/diretório antes de excluir.
+Comando             | Ação
+--------------------|------------
+`rm [arquivo]`      | Excluir um arquivo.
+`rm -f [arquivo]`   | Excluir arquivos forçadamente.
+`rm -r [arquivo]`   | Exclui o diretório e os arquivos de forma recursiva.
+`rm -d [arquivo]`   | Remove somente diretórios vazios.
+`rm -i [arquivo]`   | Pergunta se queremos remover o arquivo/diretório antes de excluir.
 
 [Ver exemplo](examples/excluindo-diretorios-e-arquivos.md)
 
@@ -237,12 +250,13 @@ Podemos excluir arquivos utilizando o comando rm.
 
 Podemos copiar arquivos utilizando o comando cp.
 
-* `cp [arquivo] [destino]`: Copia um arquivo para um determinado destino.
-  * `cp -i [arquivo] [destino]`: Pergunta se desejamos sobrescrever um arquivo destino já existente.
-  * `cp -n [arquivo] [destino]`: Não sobrescreve um arquivo já existente.
-  * `cp -r [arquivo] [destino]`: Copia diretórios de forma recursiva.
-  * `cp -p [arquivo] [destino]`: Preserva as permissões originais do arquivo (proprietário, grupo, etc.).
-  * `cp -vr [arquivo] [destino]`: Copia diretorios recursivamente.
+Comando                       | Ação
+------------------------------|------------
+`cp [arquivo] [destino]`      | Copia um arquivo para um determinado destino.
+`cp -r [arquivo] [destino]`   | Copia diretórios de forma recursiva.
+`cp -i [arquivo] [destino]`   | Pergunta se desejamos sobrescrever um arquivo destino já existente.
+`cp -n [arquivo] [destino]`   | Não sobrescreve um arquivo já existente.
+`cp -p [arquivo] [destino]`   | Preserva as permissões originais do arquivo (proprietário, grupo, etc.).
 
 [Ver exemplo](examples/copiando-diretorios-e-arquivos.md)
 
@@ -250,53 +264,51 @@ Podemos copiar arquivos utilizando o comando cp.
 
 Podemos mover arquivos com o comando mv.
 
-* `mv [arquivo] [destino]`: Move um arquivo para um determinado destino.
-  * `mv -b [arquivo] [destino]`: Cria um backup de cada arquivo destino existente.
-  * `mv -f [arquivo] [destino]`: Apaga destinos existente sem perguntar ao usuário.
-  * `mv -i [arquivo] [destino]`: Pergunta se desejamos sobrescrever o arquivo destino já existente.
-  * `mv -n [arquivo] [destino]`: Não sobrescrever um arquivo destino já existente.
+Comando                       | Ação
+------------------------------|------------
+`mv [arquivo] [destino]`      | Move um arquivo para um determinado destino.
+`mv -f [arquivo] [destino]`   | Apaga destinos existente sem perguntar ao usuário.
+`mv -b [arquivo] [destino]`   | Cria um backup de cada arquivo destino existente.
+`mv -i [arquivo] [destino]`   | Pergunta se desejamos sobrescrever o arquivo destino já existente.
+`mv -n [arquivo] [destino]`   | Não sobrescrever um arquivo destino já existente.
 
 O comando mv também é usado para renomear arquivos.
 
-* `mv [nome_atual.extenção] [novo_nome.extenção]`
+Comando                         | Ação
+--------------------------------|------------
+`mv [nome atual] [novo nome]`   | Renomeia um arquivo
 
 [Ver exemplo](examples/movendo-e-renomeando-arquivos-e-pastas.md)
 
 ## Visualização de arquivos
 
-* `more [arquivo]`: Mostra o conteúdo de um arquivo em partes.
-
-* `less [arquivo]`: Exibi o conteúdo de um arquivo páginado.
-
-* `tac [arquivo]`: Exibi o conteúdo de um arquivo de trás pra frente (da última linha pra primeira).
-
-* `cat [arquivo]`: Abre o arquivo em modo de visualização.
-  * `cat -E [arquivo]`: Marca o término de linha mostrando o caractere $ ao final de cada uma delas.
-  * `cat -n [arquivo]`: Mostra a quantidade de linas do arquivo.
-  * `cat -v [arquivo]`: Exibe caracteres não exibíveis.
-  * `cat -T [arquivo]`: Exibe tabulação mostradas como ^I.
-  * `cat -s [arquivo]`: Remove linhas repetidas em branco.
-  * `cat -b [arquivo]`: Numera as linhas que possuem algum conteúdo.
-  * `cat [arquivo] | grep [busca]`: Busca no arquivo (case sensitive).
-  * `cat [arquivo] | grep [busca] -i`: Busca no arquivo (case insensitive).
-  * `cat [arquivo] > [arquivo]`: Copia o conteúdo do arquivo para outro.
-  * `cat [arquivo] >> [arquivo]`: Adiciona o conteúdo do arquivo para outro.
+Comando                            | Ação
+-----------------------------------|------------
+`more [arquivo]`                   | Mostra o conteúdo de um arquivo em partes.
+`less [arquivo]`                   | Exibi o conteúdo de um arquivo páginado.
+`tac [arquivo]`                    | Exibi o conteúdo de um arquivo de trás pra frente (da última linha pra primeira).
+`cat [arquivo]`                    | Abre o arquivo em modo de visualização.
+`cat -n [arquivo]`                 | Mostra a quantidade de linas do arquivo.
+`cat -v [arquivo]`                 | Exibe caracteres não exibíveis.
+`cat [arquivo] | grep [busca]`     | Busca no arquivo (case sensitive).
+`cat [arquivo] | grep [busca] -i`  | Busca no arquivo (case insensitive).
+`cat [arquivo] > [arquivo]`        | Copia o conteúdo do arquivo para outro.
+`cat [arquivo] >> [arquivo]`       | Adiciona o conteúdo do arquivo para outro.
 
 [Ver exemplo](examples/visualizacao-de-arquivos.md)
 
 ## Compressão de arquivos
 
-* `tar cf pacote.tar [arquivos]`: Cria um pacote TAR (nomeado pacote.tar) com os arquivos especificados.
-* `tar xf pacote.tar`: Extrai os arquivos de "pacote.tar" (substituir a variável pacote.tar pelo nome do arquivo).
-
-* `tar czf pacote.tar.gz [arquivos]`: Cria um pacote TAR (nomeado pacote.tar.gz) com compressão GZip.
-* `tar xzf pacote.tar.gz`: Extrai um pacote TAR (nomeado pacote.tar.gz) com compressão GZip.
-
-* `tar cjf pacote.tar.bz2 [arquivos]`: Cria um pacote TAR (nomeado pacote.tar.bz2) com compressão BZip2.
-* `tar xjf pacote.tar.bz2`: Extrai um pacote TAR (nomeado pacote.tar.gz) com compressão BZip2.
-
-* `gzip arq`: Compacta um arquivo e o renomeia para arq.gz (substituir a variável arq pelo nome do arquivo).
-* `gzip -d arq.gz`: Descompacta arq.gz para um arquivo (substituir a variável arq.gz pelo nome do arquivo).
+Comando                               | Ação
+--------------------------------------|------------
+`tar cf pacote.tar [arquivos]`        | Cria um pacote TAR com os arquivos especificados.
+`tar xf pacote.tar`                   | Extrai os arquivos de "pacote.tar".
+`tar czf pacote.tar.gz [arquivos]`    | Cria um pacote TAR com compressão GZip.
+`tar xzf pacote.tar.gz`               | Extrai um pacote TAR com compressão GZip.
+`tar cjf pacote.tar.bz2 [arquivos]`   | Cria um pacote TAR com compressão BZip2.
+`tar xjf pacote.tar.bz2`              | Extrai um pacote TAR com compressão BZip2.
+`gzip arq`                            | Compacta um arquivo e o renomeia para arq.gz (substituir a variável arq pelo nome do arquivo).
+`gzip -d arq.gz`                      | Descompacta arq.gz para um arquivo (substituir a variável arq.gz pelo nome do arquivo).
 
 [Ver exemplo](examples/compressao-de-arquivos.md)
 
@@ -306,9 +318,11 @@ O comando mv também é usado para renomear arquivos.
 
 Podemos buscar por arquivos específicos em todo nosso sistema com o comando find.
 
-* `find .`: Lista todos os arquivos contidos em um diretório e subdiretórios.
-* `find . -name [arquivo]`: Busca um arquivo com um nome especifico.
-* `find [diretório] -iname [arquivo]`: Procura ignorando case sensitive.
+Comando                               | Ação
+--------------------------------------|------------
+`find .`                              | Lista todos os arquivos contidos em um diretório e subdiretórios.
+`find . -name [arquivo]`              | Busca um arquivo com um nome especifico.
+`find [diretório] -iname [arquivo]`   | Procura ignorando case sensitive.
 
 [Ver exemplo](examples/buscando-por-arquivos.md)
 
