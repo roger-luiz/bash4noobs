@@ -105,6 +105,7 @@ __Observação__: No __Linux__ tudo é representado em forma de __arquivos__, um
 
 ## Atalhos globais do Bash
 
+-----------------|------------
 Ctrl + Shift + C | Copiar.
 Ctrl + Shift + V | Colar.
 Ctrl + Shift + C | Copiar.
