@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <a href="#configurando-o-git">Configuração</a> | <a href="#comandos">Comandos</a> | <a href="criando-boas-mensagens-de-commits">Mensagens de commits</a> | <a href="#alias">Alias</a>
+  <a href="#configurando-o-git">Configuração</a> | <a href="#comandos">Comandos</a> | <a href="#criando-boas-mensagens-de-commits">Mensagens de commits</a> | <a href="#alias">Alias</a>
 </p>
 
 <p align="center">
