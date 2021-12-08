@@ -2,19 +2,7 @@
   Bash (Ubuntu)
 </h1>
 
-<p align="center">
-  <img src="../.github/linux_terminal.png"/>
-</p>
-
 # Roadmap
-
-* [Explicando alguns conceitos](#explicando-alguns-conceitos)
-  * [Terminal](#terminal)
-  * [Console](#console)
-  * [Emulador de terminal](#emulador-de-terminal)
-  * [Shell](#shell)
-  * [Linha de comandos - CLI](#linha-de-comandos---cli)
-  * [Shell vs Linha de comandos](#shell-vs-linha-de-comandos)
 
 * [Básico antes dos comandos](#básico-antes-dos-comandos)
   * [Atalhos globais do Bash](#atalhos-globais-do-bash)
@@ -48,58 +36,6 @@
   * [Calculadora](#calculadora)
 
 * [Referências](#referências)
-
-# Explicando alguns conceitos
-
-## Terminal
-
-O terminal é um ambiente para entrada e saída de comandos, a palavra terminal também pode significar um dispositivo no qual podemos interagir com o computador, como por exemplo um teclado e monitor. No caso do terminal que estamos habituados ele é um software que emula os terminais tradicionais.
-
-## Console
-
-O console é um tipo especial de terminal. Geralmente é um painel de controle conectado a um computador. Originalmente um console é um dispositivo eletrônico no qual nos permite controlar um computador, por meio de entrada de texto e saída de vídeo.
-
-No linux, nós também temos o console porém geralmente acessamos o console quando temos uma distribuição no modo texto, ou seja, sem interface gráfica.
-
-## Emulador de terminal
-
-Os terminais em software, também podem ser chamados de pseudo-terminais ou terminais virtuais, são softwares fornecidos por programas, específicos, que são do tipo emulador de terminais, alguns exemplos deles são:
-
-* Xterm
-* Konsole
-* Gnome Terminal
-* Terminator
-* Termux
-* Sakura
-
-## Shell
-
-O shell é um interpretador de linha de comandos. É a interface primária que nós vemos, caso o sistema não possuir interface gráfica, ao fazermos login, e sua função básica é iniciar outros programas e executar comandos. Quando estamos falando de linux, o shell se refere a shell de linha de comandos, alguns exemplos de shells comuns no linux:
-
-* Bash
-* csh
-* zsh
-* fish
-
-## Linha de comandos - CLI
-
-Uma linha de comandos, ou CLI que é um acrônimo para _command line interface_, é uma interface na qual nós podemos digitar comandos e pressionarmos alguma tecla para que o comando seja, de fato, executado. Ou seja, na linha de comando nós não temos botões, menus, mouse, atalhos entre outros itens que possam ser clicados com o mouse.
-
-Exemplo de uma linha de comando:
-
-```console
-roger@abantes-PC:~$
-```
-
-Quando pressionamos a tecla que faça o nosso comando ser executado, geralmente a tecla `enter`, o shell captura esse comando, interpreta e executa adequadamente.
-
-Agora que vimos o que é uma linha de comando e o que é um shell, vamos entender quais são suas diferenças, já que os dois são bem semelhantes.
-
-## Shell vs Linha de comandos
-
-A linha de comando não passa de uma interface, na qual, nós escrevemos os comandos. Já o shell é um programa especial que consegue interpretar esse comandos que estamos digitando.
-
-__Observação__: No __Linux__ tudo é representado em forma de __arquivos__, um usuário do terminal é represtentado como um arquivo, assim como os própios comandos, os hardwares conectados na máquina, diretórios e etc.
 
 # Básico antes dos comandos
 
@@ -267,6 +203,8 @@ O comando mv também é usado para renomear arquivos.
 * `-s`: Remove linhas repetidas em branco.
 * `-b`: Numera as linhas que possuem algum conteúdo.
 
+Busca e manilupalção de conteúdo:
+
 * `cat [arquivo] | grep [busca]`: Busca no arquivo (case sensitive).
 * `cat [arquivo] | grep [busca] -i`: Busca no arquivo (case insensitive).
 * `cat [arquivo] > [arquivo]`: Copia o conteúdo do arquivo para outro.
@@ -276,15 +214,22 @@ O comando mv também é usado para renomear arquivos.
 
 ## Compressão de arquivos
 
+Tar:
+
 * `tar cf pacote.tar [arquivos]`: Cria um pacote TAR (nomeado pacote.tar) com os arquivos especificados.
 * `tar xf pacote.tar`: Extrai os arquivos de "pacote.tar" (substituir a variável pacote.tar pelo nome do arquivo).
+
+GZip:
 
 * `tar czf pacote.tar.gz [arquivos]`: Cria um pacote TAR (nomeado pacote.tar.gz) com compressão GZip.
 * `tar xzf pacote.tar.gz`: Extrai um pacote TAR (nomeado pacote.tar.gz) com compressão GZip.
 
+bz2:
+
 * `tar cjf pacote.tar.bz2 [arquivos]`: Cria um pacote TAR (nomeado pacote.tar.bz2) com compressão BZip2.
 * `tar xjf pacote.tar.bz2`: Extrai um pacote TAR (nomeado pacote.tar.gz) com compressão BZip2.
 
+Gz:
 * `gzip arq`: Compacta um arquivo e o renomeia para arq.gz (substituir a variável arq pelo nome do arquivo).
 * `gzip -d arq.gz`: Descompacta arq.gz para um arquivo (substituir a variável arq.gz pelo nome do arquivo).
 
@@ -396,19 +341,18 @@ __Observação__: Se você estiver logado como usuário root, não é necessári
 
 ### Trocando senha de usuários
 
-O `passwd` é um comando utilizado para configurar ou trocar a senha das contas dos usuários do sistema. É necessário possuir privilégios administrativos para executá-lo, mas um usuário comum consegue alterar sua própria senha.
+`passwd [opções] [usuário]`: O passwd é um comando utilizado para configurar ou trocar a senha das contas dos usuários do sistema. É necessário possuir privilégios administrativos para executá-lo, mas um usuário comum consegue alterar sua própria senha.
 
-* `passwd [usuário]`: Troca/Configura a senha de um determinado usruário.
-  * `passwd -l [usuário]`: Trava a senha do usuário, ficando impedido de se logar e não pode trocar a senha (não é desabilitado).
-  * `passwd -u [usuário]`: Destrava a senha do usuário.
-  * `passwd -d [usuário]`: Exclui a senha do usuário.
-  * `passwd -e [usuário]`: Expira a senha do usuário, forçando-o a fornecer uma nova ao logar-se novamente.
-  * `passwd -x dias [usuário]`: Expira a senha do usuário quando atingir o número de dias especificados.
-  * `passwd -n dias [usuário]`: Define a quantidade mínima de dias que o usuário deverá esperar para trocar a senha.
-  * `passwd -w dias [usuário]`: define a quantidade mínima de dias que o usuário receberá o aviso que a senha precisa ser alterada.
-  * `passwd -i [usuário]`: Deixa o usuário inativo, caso a senha tenha expirado.
-  * `passwd -S [usuário]`: Exibe o status da conta.
-  * `passwd -a [usuário]`: Usada em conjunto com a opção -S mostra o status das contas de todos os usuários.
+* `-l`: Trava a senha do usuário, ficando impedido de se logar e não pode trocar a senha (não é desabilitado).
+* `-u`: Destrava a senha do usuário.
+* `-d`: Exclui a senha do usuário.
+* `-e`: Expira a senha do usuário, forçando-o a fornecer uma nova ao logar-se novamente.
+* `-x dias`: Expira a senha do usuário quando atingir o número de dias especificados.
+* `-n dias`: Define a quantidade mínima de dias que o usuário deverá esperar para trocar a senha.
+* `-w dias`: define a quantidade mínima de dias que o usuário receberá o aviso que a senha precisa ser alterada.
+* `-i`: Deixa o usuário inativo, caso a senha tenha expirado.
+* `-S`: Exibe o status da conta.
+* `-a`: Usada em conjunto com a opção -S mostra o status das contas de todos os usuários.
 
 ## Tipos de usuários
 
@@ -428,12 +372,9 @@ O usuário root, também chamado de superusuário, tem controle total sobre o si
 
 Exemplo de um usuário root: `root@roger:~#`
 
-__Observação__: Não é recomendado que você use o terminal no modo root o tempo inteiro.
-
 ### Grupos
 
-Um grupo é um conjunto de um ou mais usuários. É interessante reunir vários usuários em um grupo para definir suas propriedades, como as permissões. Como o arquivo passwd nós temos um arquivo somente para armazenar detalhes sobre os grupos.
-Esse arquivo esta localizado em: `/etc/group`.
+Um grupo é um conjunto de um ou mais usuários. É interessante reunir vários usuários em um grupo para definir suas propriedades, como as permissões. Como o arquivo passwd nós temos um arquivo somente para armazenar detalhes sobre os grupos. Esse arquivo esta localizado em: `/etc/group`.
 
 ## Gerenciamento de usuários
 
