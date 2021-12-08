@@ -1,6 +1,6 @@
 # Introdução ao Bash, Git e Vim para Devs
 
-* [Bash](bash/README.md): Entenda a estrutura de diretórios, manipule arquivos e processos, busque por informações do sistema de forma simples.
+* [Bash](bash/README.md): Uma explicação não técnica dos comandos mais úteis do dia a dia.
 * [Git](git/README.md): Aprenda a usar os comandos mais úteis no seu dia a dia como dev extraíndo o melhor do Git.
 * [Vim](vim/README.md): Aprenda a usar o como um ninja.
 
