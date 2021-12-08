@@ -369,59 +369,38 @@ __Observação__: Se você estiver logado como usuário root, não é necessári
 * `-S`: Exibe o status da conta.
 * `-a`: Usada em conjunto com a opção -S mostra o status das contas de todos os usuários.
 
-## Tipos de usuários
-
-### Usuários comuns
-
-São os usuários que podem se conectar no sistema. Geralmente, estes usuários possuem uma home e podem manipular arquivos quando tem as permissões para tal. Porém estes usuários geralmente não tem permissão para certos arquivos e diretórios na maquina e não podem executar muitas funções a nível de sistema.
-
-Exemplo de um usuário comum: `roger@roger:~$`
-
-### Usuários de sistema
-
-Diferente dos usuários comuns, estes usuários não se conectam no sistema. São contas usadas para tarefas específicas dentro do sistema que não são de propriedade de uma pessoa em particular.
-
-### Root
-
-O usuário root, também chamado de superusuário, tem controle total sobre o sistema operacional. Ele pode acessar todos os arquivos e normalmente é o único que pode executar certos programas, como por exemplo o httpd.
-
-Exemplo de um usuário root: `root@roger:~#`
-
-### Grupos
-
-Um grupo é um conjunto de um ou mais usuários. É interessante reunir vários usuários em um grupo para definir suas propriedades, como as permissões. Como o arquivo passwd nós temos um arquivo somente para armazenar detalhes sobre os grupos. Esse arquivo esta localizado em: `/etc/group`.
-
-## Gerenciamento de usuários
-
 ### Adicionar usuários
 
 Criar um usuário novo no Linux é bem simples, apenas é necessário o comando useradd e indicar o nome do novo usuário.
 
-* `useradd [nomeusuario]`: Cria um novo usuário.
-  * `useradd -d [nomeusuario]`: Define o nome do diretório home do usuário (mas não o cria).
-  * `useradd -s [nomeusuario]`: Define o shell padrão do usuário.
-  * `useradd -h [nomeusuario]`: Exibe as opções do comando.
+`useradd [opções] [nomeusuario]`: Cria um novo usuário.
+
+* `-d`: Define o nome do diretório home do usuário (mas não o cria).
+* `-s`: Define o shell padrão do usuário.
+* `-h`: Exibe as opções do comando.
 
 ### Alterar usuários
 
 Para alterarmos uma conta de usuário basta apenas utilizarmos o comando usermod.
 
-* `usermod [nomeusuário]`: Altera um usário.
-  * `usermod -d diretório [-m] [nomeusuário]`: Cria uma nova home para o usuário. A opção -m move os arquivos da home atual do usuário para a nova.
-  * `usermod -e yyyy-mm-dd [nomeusuário]`: Altera a data de expiração da conta do usuário.
-  * `usermod -g grupo [nomeusuário]`: Altera o GID do grupo do usuário para o especificado.
-  * `usermod -G grupo[, grupo2, ...] [nomeusuário]`: Define o GID dos outros grupos que o usuário pertence.
-  * `usermod -l nome [nomeusuário]`: Altera o nome do usuário (ele não pode estar logado).
-  * `usermod -s shell [nomeusuário]`: Altera o shell do usuário.
-  * `usermod -u uid [nomeusuário]`: Altera o número de UID do usuário.
+`usermod [opções] [nomeusuário]`: Altera um usário.
+
+* `-d diretório [-m]`: Cria uma nova home para o usuário. A opção -m move os arquivos da home atual do usuário para a nova.
+* `-e yyyy-mm-dd`: Altera a data de expiração da conta do usuário.
+* `-g grupo`: Altera o GID do grupo do usuário para o especificado.
+* `-G grupo[, grupo2, ...]`: Define o GID dos outros grupos que o usuário pertence.
+* `-l nome`: Altera o nome do usuário (ele não pode estar logado).
+* `-s shell`: Altera o shell do usuário.
+* `-u uid`: Altera o número de UID do usuário.
 
 ### Remover usuários
 
 Para removermos um usuário utilizamos o comando userdel.
 
-* `userdel [nomeusuario]`: Remove um usuário.
-  * `userdel -h [nomeusuario]`: Exibe as opções do comando.
-  * `userdel -r [nomeusuario]`: Deleta a home e todos os seus arquivos.
+`userdel [opções] [nomeusuario]`: Remove um usuário.
+
+* `userdel -h [nomeusuario]`: Exibe as opções do comando.
+* `userdel -r [nomeusuario]`: Deleta a home e todos os seus arquivos.
 
 ## Calculadora
 
@@ -777,18 +756,18 @@ Marcação de sintaxe:
 
 confira os link's abaixos para saber mais:
 
-* [Curso de Linux - Primeiros Passos](https://www.youtube.com/watch?v=6nN2EglOqCM&list=PLHz_AreHm4dlIXleu20uwPWFOSswqLYbV)
-* [Curso de Linux Básico / Certificação LPIC - 1](https://www.youtube.com/watch?v=UsHiWIgxj2M&list=PLucm8g_ezqNp92MmkF9p_cj4yhT-fCTl7)
-* [linux4noobs](https://github.com/LucasHe4rt/linux4noobs)
+[Curso de Linux - Primeiros Passos](https://www.youtube.com/watch?v=6nN2EglOqCM&list=PLHz_AreHm4dlIXleu20uwPWFOSswqLYbV)
+[Curso de Linux Básico / Certificação LPIC - 1](https://www.youtube.com/watch?v=UsHiWIgxj2M&list=PLucm8g_ezqNp92MmkF9p_cj4yhT-fCTl7)
+[linux4noobs](https://github.com/LucasHe4rt/linux4noobs)
 
-* [Vim para Noobs](https://leanpub.com/vimparanoobs/read)
-* [Vimbook](https://vimbook.gitbook.io/vimbook/)
-* [Vim - Mais que um editor](https://www.youtube.com/watch?v=UUzW46SeLhg&list=LLRzk-2RgRW7ksClaSKNBMMw&index=23&t=1856s)
-* [Vim - Portal brasileiro do editor de textos Vim (VI)](https://aurelio.net/vim/vi-vim-venci.html)
-* [VI, Vim e venci](https://aurelio.net/vim/vi-vim-venci.html)
-* [Mapeamento de teclas do Vim](https://www.mundotibrasil.com.br/mapeamento-de-teclas-do-vim/)
-* [.vimrc - Viva o Linux](https://www.vivaolinux.com.br/etc/vimrc-2/)
-* [Como editar preferencias - WikiBooks](https://pt.wikibooks.org/wiki/Vim/Como_editar_prefer%C3%AAncias)
-* [A goo vimrc - Doug Black](https://dougblack.io/words/a-good-vimrc.html)
-* [Vim Config](https://vimconfig.com/)
-* [Vim Bootstrap](https://vim-bootstrap.com/)
+[Vim para Noobs](https://leanpub.com/vimparanoobs/read)
+[Vimbook](https://vimbook.gitbook.io/vimbook/)
+[Vim - Mais que um editor](https://www.youtube.com/watch?v=UUzW46SeLhg&list=LLRzk-2RgRW7ksClaSKNBMMw&index=23&t=1856s)
+[Vim - Portal brasileiro do editor de textos Vim (VI)](https://aurelio.net/vim/vi-vim-venci.html)
+[VI, Vim e venci](https://aurelio.net/vim/vi-vim-venci.html)
+[Mapeamento de teclas do Vim](https://www.mundotibrasil.com.br/mapeamento-de-teclas-do-vim/)
+[.vimrc - Viva o Linux](https://www.vivaolinux.com.br/etc/vimrc-2/)
+[Como editar preferencias - WikiBooks](https://pt.wikibooks.org/wiki/Vim/Como_editar_prefer%C3%AAncias)
+[A goo vimrc - Doug Black](https://dougblack.io/words/a-good-vimrc.html)
+[Vim Config](https://vimconfig.com/)
+[Vim Bootstrap](https://vim-bootstrap.com/)
