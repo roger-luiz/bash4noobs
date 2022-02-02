@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img alt="badge" src="https://img.shields.io/badge/author-RogerLuiz-191F2B?style=flat-square">
+  <img alt="badge" src="https://img.shields.io/badge/author-RogerFernando-191F2B?style=flat-square">
   <img alt="badge" src="https://img.shields.io/github/stars/abantes/bash-for-developers?color=191F2B&style=flat-square">
   <img alt="badge" src="https://img.shields.io/badge/license-MIT-191F2B?style=flat-square">
   <img alt="badge" src="https://img.shields.io/github/contributors/abantes/bash-for-developers?color=191F2B&style=flat-square">
