@@ -13,11 +13,11 @@ Este é um tutorial de Git, Bash e Vim para novas pessoas no mundo Linux. Ao pas
 
 Escolha o que você quer aprender clicando na imagem:
 
-<p align="center" margin-bottom="50px">
+<p align="center">
   <a href="./bash.md"><img width="200px" src="./images/bash.png"></a>
 </p>
 
-<p align="center" margin-bottom="50px"">
+<p align="center">
   <a href="./git.md"><img width="100px" src="./images/git.png"></a>
 </p>
 
