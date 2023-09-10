@@ -14,7 +14,7 @@ Este é um tutorial de Git, Bash e Vim para novas pessoas no mundo Linux. Ao pas
 Escolha o que você quer aprender primeiro clicando na imagem:
 
 <p align="center">
-  <a href="./bash.md"><img width="150px" src="https://th.bing.com/th/id/OIP.pPHW-x1z3LX6oZDluzEbKwHaDn?pid=ImgDet&rs=1"></a>
+  <a href="./bash.md"><img width="150px" src="https://th.bing.com/th/id/OIP.1XoVRivIBaKjuSEhNAVDMQHaFw?pid=ImgDet&rs=1"></a>
   <a href="./git.md"><img width="150px" src="https://www.liblogo.com/img-logo/gi7523gfaf-git-logo-git-logo-downloads.png"></a>
   <a href="./vim.md"><img width="150px" src="https://th.bing.com/th/id/R.b2b12db51432b3e8eba512c21f2fc802?rik=3kjldL%2bbmmUvWg&pid=ImgRaw&r=0"></a>
 </p>
