@@ -15,7 +15,7 @@ Escolha o que você quer aprender clicando na imagem:
 
 <p align="center">
   <a href="./bash.md"><img width="200px" src="./images/bash.png"></a>
-  <a href="./git.md"><img width="200px" src="./images/git.png"></a>
+  <a href="./git.md"><img width="100px" src="./images/git.png"></a>
   <a href="./vim.md"><img width="200px" src="./images/vim.png"></a>
 </p>
 
