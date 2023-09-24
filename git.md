@@ -87,6 +87,7 @@ Tipos:
 * `style`: Alterações que não afetam o significado do código (espaço em branco, formatação, ponto e vírgula, etc).
 * `test`: Adicionando testes ausentes ou corrigindo testes existentes.
 * `revert`: Reverter para um commit anterior.
+* `chore` - Atualizações de tarefas de build, configurações de administrador, pacotes etc.
 
 Título:
 
@@ -95,9 +96,13 @@ O título contém uma descrição sucinta da mudança:
 Use o imperativo, tempo presente: "mudança" não "mudou" nem "muda".
 Não capitalize a primeira letra.
 Sem ponto (.) no final.
+Adicione um tipo consistente com o título do conteúdo.
 
 ```
-git commit -m "fix: fix typo in introduction to user guide"
+git commit -m "docs: Atualizaçao do README
+git commit -m "fix: Loop infinito na linha 50
+git commit -m "feat: Pagina de login
+git commit -m "ci: Modificaçao no Dockerfile"
 ```
 
 ## Alias
