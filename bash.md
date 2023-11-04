@@ -82,15 +82,13 @@ Duretório   | Ação
 *`apropos [expressão]`: Este comando procura por uma determinada expressão nas páginas de documentação do Linux.
 
 Observações:
-  * O comando man -k tem o mesmo comportamento do comando apropos.
-  * O comando mandb cria/atualiza a base de dados acessada pelo comando apropos.
-  * O comando whatis mostra um resumo sobre um ou mais comandos.
-  * O comando xman é um navegador para as páginas on-line.
+  O comando man -k tem o mesmo comportamento do comando apropos.
+  O comando mandb cria/atualiza a base de dados acessada pelo comando apropos.
+  O comando whatis mostra um resumo sobre um ou mais comandos.
+  O comando xman é um navegador para as páginas on-line.
 
 * `[comando] --help`: Documentação do comando.
-
 * `man [comando]`: Manual do comando.
-
 * `info [comando]`: Semelhante ao man, mas geralmente fornece informações mais detalhadas.
 
 Histórico de comandos:
@@ -125,7 +123,6 @@ Entrando e saíndo de diretórios:
   * cd -: Nos retorna para o último diretório acessado.
 
 * `pwd`: Exibe o caminho de diretório atual.
-
 * `du` [diretório]: Exibe o tamanho de um diretório e todos os seus subdiretórios.
 
 Criando diretórios:
@@ -175,9 +172,7 @@ O comando mv também é usado para renomear arquivos.
 Visualização de arquivos:
 
 * `more [arquivo]`: Mostra o conteúdo de um arquivo em partes.
-
 * `less [arquivo]`: Exibi o conteúdo de um arquivo páginado.
-
 * `tac [arquivo]`: Exibi o conteúdo de um arquivo de trás pra frente (da última linha pra primeira).
 
 * `cat [opções] [arquivo]`: Abre o arquivo em modo de visualização.
@@ -222,9 +217,7 @@ Buscando por arquivos
 Podemos buscar por arquivos específicos em todo nosso sistema com o comando find.
 
 * `find .`: Lista todos os arquivos contidos em um diretório e subdiretórios.
-
 * `find . -name [arquivo]`: Busca um arquivo com um nome especifico.
-
 * `find [diretório] -iname [arquivo]`: Procura ignorando case sensitive.
 
 Referência global:
@@ -249,13 +242,9 @@ Referências globais são recursos para especificar um ou mais arquivos ou diret
 Processos:
 
 * `top`: Exibe os processos usando a maioria dos recursos do sistema, a qualquer momento. "Q" pode ser usado para sair.
-
 * `htop`: O comando HTOP é uma evolução do comando TOP. As informações são semelhantes às produzidas pelo comando TOP, mas apresentadas num interface mais intuitivo e colorido.
-
 * `kill pid`: Mata o processo com o id de processo pid.
-
 * `killall Discord`: Mata todos os processo com o nome "Discord".
-
 * `pkill fire`: Mata todos os processo que tenha "fire" em seu nome.
 
 * `ps [opções]`: O comando ps exibe informações sobre os processos que estão executando na máquina.
@@ -270,11 +259,8 @@ Processos:
 Informações do sistema:
 
 * `whereis [programa]`: Exibe possíveis localizações de um determinado programa.
-
 * `date`: Exibe a data e hora atual.
-
 * `whoami`: Imprime o nome de usuário usado no momento em que foi digitado.
-
 * `sudo su`: Entra no modo usuário root.
 
 * `uname [opções]`: Mostra informações sobre o sistema operacional.
